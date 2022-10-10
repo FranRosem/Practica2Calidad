@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Frank-PC\\Desktop\\FilmFranchiseApi\\FilmFranchiseAPI\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {}
+    "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Frank-PC\\Desktop\\FilmFranchiseApi\\FilmFranchiseAPI\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
+    "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Frank-PC\\Desktop\\FilmFranchiseApi\\FilmFranchiseAPI\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+        "projectUniqueName": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
         "projectName": "FilmFranchiseAPI",
-        "projectPath": "C:\\Users\\Frank-PC\\Desktop\\FilmFranchiseApi\\FilmFranchiseAPI\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
-        "packagesPath": "C:\\Users\\Frank-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Frank-PC\\Desktop\\FilmFranchiseApi\\FilmFranchiseAPI\\FilmFranchiseAPI\\obj\\",
+        "projectPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+        "packagesPath": "C:\\Users\\miky1\\.nuget\\packages\\",
+        "outputPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Frank-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\miky1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

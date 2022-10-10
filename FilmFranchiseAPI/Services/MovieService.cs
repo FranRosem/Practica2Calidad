@@ -20,13 +20,14 @@ namespace FilmFranchiseAPI.Services
             _mapper = mapper;
         }
 
+        //1 Catidad de pruebas necesarias para ValidateFranchiseAsync 2, porque numero de decisiones +1 
         private async Task ValidateFranchiseAsync(int franchiseId)
         {
             var franchise = await _franchiseRepository.GetFranchiseAsync(franchiseId);
             if (franchise == null)
                 throw new NotFoundElementException($"The Book Store with id:{franchiseId} does not exists.");
         }
-
+        // 2Cantidad de pruebas 2
         public async Task<MovieModel> CreateMovieAsync(int filmFranchiseId, MovieModel movie)
         {
             await ValidateFranchiseAsync(filmFranchiseId);
@@ -41,7 +42,7 @@ namespace FilmFranchiseAPI.Services
 
             throw new Exception("Database Error.");
         }
-
+        // 3 Cantidad de pruebas 2
         public async Task<MovieModel> GetMovieAsync(int filmFranchiseId, int movieId)
         {
             await ValidateFranchiseAsync(filmFranchiseId);
@@ -53,7 +54,7 @@ namespace FilmFranchiseAPI.Services
             something.FilmFranchiseId = filmFranchiseId;
             return something;
         }
-
+        //4 Cantidad de pruebas 2
         public async Task<IEnumerable<MovieModel>> GetMoviesAsync(int filmFranchiseId)
         {
             await ValidateFranchiseAsync(filmFranchiseId);
@@ -67,7 +68,7 @@ namespace FilmFranchiseAPI.Services
             }
             return something;
         }
-
+        // 5 Cantidad de pruebas 2
         public async Task<MovieModel> UpdateMovieAsync(int filmFranchiseId, int movieId, MovieModel movie)
         {
             await GetMovieAsync(filmFranchiseId, movieId);
@@ -82,7 +83,7 @@ namespace FilmFranchiseAPI.Services
 
             throw new Exception("Database Error.");
         }
-
+        //6 Cantidad de pruebas 2
         public async Task DeleteMovieAsync(int filmFranchiseId, int movieId)
         {
             await GetMovieAsync(filmFranchiseId, movieId);

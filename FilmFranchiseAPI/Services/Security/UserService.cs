@@ -29,7 +29,7 @@ namespace FilmFranchiseAPI.Services.Security
             this._idOpts = optionsAccessor.Value ?? new IdentityOptions();
         }
 
-
+        //Catidad de pruebas 4, hay 3 decisiones +1 =4
         public async Task<UserManagerResponse> LoginUserAsync(LoginViewModel model)
         {
             var user = await userManager.FindByEmailAsync(model.Email);
@@ -86,6 +86,7 @@ namespace FilmFranchiseAPI.Services.Security
             };
         }
 
+        //1+1+1, Cantidad de pruebas 4
         public async Task<UserManagerResponse> RegisterUserAsync(RegisterViewModel model)
         {
             if (model == null)
@@ -125,6 +126,7 @@ namespace FilmFranchiseAPI.Services.Security
             };
         }
 
+        //1, cantidad de pruebas 2
         public async Task<UserManagerResponse> CreateRoleAsync(CreateRoleViewModel model)
         {
 
