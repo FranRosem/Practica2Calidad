@@ -156,6 +156,7 @@ namespace FilmFranchiseAPI.Services.Security
         }
 
 
+        //1+1+1+1, Cantidad de pruebas 5, #decesiones 4+1
         public async Task<UserManagerResponse> CreateUserRoleAsync(CreateUserRoleViewModel model)
         {
             var role = await roleManager.FindByIdAsync(model.RoleId);

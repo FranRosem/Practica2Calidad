@@ -26,6 +26,7 @@ namespace FilmFranchiseAPI.Services
             _franchiseRepository = franchiseRepository;
             _mapper = mapper;
         }
+        //Cantidad de pruebas 2
         public async Task<FilmFranchiseModel> CreateFranchiseAsync(FilmFranchiseModel filmFranchise)
         {
             var franchiseEntity = _mapper.Map<FilmFranchiseEntity>(filmFranchise);
@@ -37,7 +38,7 @@ namespace FilmFranchiseAPI.Services
             }
             throw new Exception("Database Error.");
         }
-
+        //Cantidad de pruebas 2 # de decisiones mas 1
         public async Task<FilmFranchiseModel> GetFranchiseAsync(int filmFranchiseId, bool showFilmFranchise = false)
         {
             var franchise = await _franchiseRepository.GetFranchiseAsync(filmFranchiseId, showFilmFranchise);
@@ -47,7 +48,7 @@ namespace FilmFranchiseAPI.Services
 
             return _mapper.Map<FilmFranchiseModel>(franchise);
         }
-
+        //Cantidad de pruebas 3
         public async Task<IEnumerable<FilmFranchiseModel>> GetFranchisesAsync(string direction, string orderBy)
         {
             if (!_allowedSortValues.Contains(orderBy.ToLower()))
@@ -62,7 +63,7 @@ namespace FilmFranchiseAPI.Services
             var bookStoreEntityList = await _franchiseRepository.GetFranchisesAsync(direction, orderBy);
             return _mapper.Map<IEnumerable<FilmFranchiseModel>>(bookStoreEntityList);
         }
-
+        //Cantidad de pruebas 2
         public async Task<FilmFranchiseModel> UpdateFranchiseAsync(int filmFranchiseId, FilmFranchiseModel filmFranchise)
         {
             await GetFranchiseAsync(filmFranchiseId);
@@ -79,7 +80,7 @@ namespace FilmFranchiseAPI.Services
 
             throw new Exception("Database Error.");
         }
-
+        //Cantidad de pruebas 2
         public async Task DeleteFranchiseAsync(int filmFranchiseId)
         {
             await GetFranchiseAsync(filmFranchiseId);
