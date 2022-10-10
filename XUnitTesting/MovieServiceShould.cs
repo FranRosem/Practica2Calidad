@@ -4,7 +4,7 @@ using System.Text;
 using Xunit;
 namespace XUnitTesting
 {
-    internal class MovieServiceShould
+    public class MovieServiceShould
     {
     }
 }

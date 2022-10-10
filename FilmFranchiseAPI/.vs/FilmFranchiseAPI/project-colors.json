@@ -5,7 +5,12 @@
       "ProjectGuid": "c26a4432-282b-4bf1-b326-3ec4c7497d35",
       "DisplayName": "FilmFranchiseAPI",
       "ColorIndex": 0
+    },
+    "90e435ce-b1b6-4042-b9af-02cd2c603088": {
+      "ProjectGuid": "90e435ce-b1b6-4042-b9af-02cd2c603088",
+      "DisplayName": "XUnitTesting",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
