@@ -152,3 +152,5 @@ C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\obj\Debug\netcor
 C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\obj\Debug\netcoreapp3.1\XUnitTesting.dll
 C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\obj\Debug\netcoreapp3.1\XUnitTesting.pdb
 C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\obj\Debug\netcoreapp3.1\XUnitTesting.genruntimeconfig.cache
+C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting\bin\Debug\netcoreapp3.1\Moq.dll
