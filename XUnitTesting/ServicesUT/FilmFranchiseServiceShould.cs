@@ -242,5 +242,47 @@ namespace XUnitTesting.ServicesUT
             Assert.Equal(filmFranchiseUpdated.FilmProducer, filmFranchiseModel.FilmProducer);
             Assert.Equal(filmFranchiseUpdated.FirstMovieYear, filmFranchiseModel.FirstMovieYear);
         }
+
+        [Fact]
+        public void ErrorUpdateFranchiseAsync()
+        {
+            var filmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var filmFranchiseUpdatedEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "DC",
+                FilmProductor = "Warner Bros",
+                FilmProducer = "Dan Lin",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
+
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            filmFranchiseRepositoryMock.Setup(f => f.UpdateFranchiseAsync(1, filmFranchiseEntity));
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(false);
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseUpdatedEntity);
+
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+
+            var exception = Assert.ThrowsAsync<Exception>(async () => await filmFranchiseService.UpdateFranchiseAsync(1, filmFranchiseModel));
+            Assert.Equal("Database Error.", exception.Result.Message);
+        }
     }
 }
