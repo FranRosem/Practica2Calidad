@@ -44,7 +44,7 @@ namespace FilmFranchiseAPI.Services
             var franchise = await _franchiseRepository.GetFranchiseAsync(filmFranchiseId, showFilmFranchise);
 
             if (franchise == null)
-                throw new NotFoundElementException($"The Book Store with id:{filmFranchiseId} does not exists.");
+                throw new NotFoundElementException($"Film Franchise with id:{filmFranchiseId} does not exists.");
 
             return _mapper.Map<FilmFranchiseModel>(franchise);
         }

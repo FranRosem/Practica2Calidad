@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Xunit;
 
-namespace XUnitTesting
+namespace XUnitTesting.ModelsUT
 {
     public class MovieModelShould
     {
@@ -17,10 +17,10 @@ namespace XUnitTesting
             {
                 Id = 1,
             };
-            
-            
+
+
             //Act
-            var getValue=movie.Id;
+            var getValue = movie.Id;
             //Assert
             Assert.Equal(1, getValue);
         }
@@ -31,16 +31,16 @@ namespace XUnitTesting
             //Arrange
             MovieModel movie = new MovieModel();
             string title = "Avengers1";
-            movie.Title =title;
+            movie.Title = title;
             //Act
-            var getValue=movie.Title;
+            var getValue = movie.Title;
             //Assert
-           // Assert.Equal(movie.Title, title);
+            // Assert.Equal(movie.Title, title);
             Assert.Contains(getValue, movie.Title);
         }
 
         [Fact]
-        public  void ValidateDuration()
+        public void ValidateDuration()
         {
             //Arrange
             MovieModel movie = new MovieModel();
@@ -65,28 +65,28 @@ namespace XUnitTesting
         {
             MovieModel movie = new MovieModel();
             movie.Description = "Los vengadores son los heroes mas poderosos del planeta";
-            var getValue=movie.Description;
-            Assert.IsType<String>(getValue);
-            Assert.Contains( "heroes", getValue);
+            var getValue = movie.Description;
+            Assert.IsType<string>(getValue);
+            Assert.Contains("heroes", getValue);
         }
         [Fact]
         public void ValidateImagePath()
         {
             MovieModel movie = new MovieModel();
-            
+
             movie.ImagePath = "C:\\uNIVERSIDAD\\Preparacion y eva proyect\\dell.png";
-            var listExtencionImage = new List<string>() {".png"};
+            var listExtencionImage = new List<string>() { ".png" };
             //Assert.Contains(".png", movie.ImagePath);
             foreach (string extencion in listExtencionImage)
             {
-                Assert.Contains(extencion,movie.ImagePath);
+                Assert.Contains(extencion, movie.ImagePath);
             }
             //Assert.IsType<string>(movie.ImagePath);
         }
         [Fact]
         public void ValidateFilmFranchiseId()
         {
-            MovieModel movie=new MovieModel();
+            MovieModel movie = new MovieModel();
             FilmFranchiseModel filmFranchise = new FilmFranchiseModel();
             filmFranchise.Id = 1;
             movie.FilmFranchiseId = filmFranchise.Id;

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj": {}
+    "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj": {}
   },
   "projects": {
-    "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
+    "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+        "projectUniqueName": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
         "projectName": "FilmFranchiseAPI",
-        "projectPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
-        "packagesPath": "C:\\Users\\miky1\\.nuget\\packages\\",
-        "outputPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\obj\\",
+        "projectPath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+        "outputPath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\miky1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +86,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -93,21 +99,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj": {
+    "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
+        "projectUniqueName": "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
         "projectName": "XUnitTesting",
-        "projectPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
-        "packagesPath": "C:\\Users\\miky1\\.nuget\\packages\\",
-        "outputPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\XUnitTesting\\obj\\",
+        "projectPath": "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
+        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+        "outputPath": "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\miky1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,14 +125,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
-                "projectPath": "C:\\uNIVERSIDAD\\Gestion de calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj"
+              "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj": {
+                "projectPath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj"
               }
             }
           }
@@ -137,6 +148,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.11.0, )"
@@ -168,7 +183,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -177,7 +193,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
