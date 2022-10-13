@@ -112,7 +112,20 @@ namespace XUnitTesting.ServicesUT
         [Fact]
         public void ErrorGetFranchiseAsync()
         {
-            var filmFranchiseEntity = new FilmFranchiseEntity()
+            int filmFranchiseId = 1;
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+
+            var exception = Assert.ThrowsAsync<NotFoundElementException>(async () => await filmFranchiseService.GetFranchiseAsync(1, false));
+            Assert.Equal($"Film Franchise with id:{filmFranchiseId} does not exists.", exception.Result.Message);
+        }
+
+        [Fact]
+        public async Task GetFranchisesAsync()
+        {
+            var oneFilmFranchiseEntity = new FilmFranchiseEntity()
             {
                 Id = 1,
                 Franchise = "Marvel",
@@ -123,19 +136,30 @@ namespace XUnitTesting.ServicesUT
                 Description = "SuperHeros Movies",
                 MovieCount = 22,
             };
+            var twoFilmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 2,
+                Franchise = "DC",
+                FilmProductor = "Warner Bros.",
+                FilmProducer = "Dan Lin",
+                FirstMovieYear = 2013,
+                LastMovieYear = 2021,
+                Description = "SuperHeros Movies",
+                MovieCount = 8,
+            };
+            var FilmFranchisesEnumerable = new List<FilmFranchiseEntity>() { oneFilmFranchiseEntity, twoFilmFranchiseEntity } as IEnumerable<FilmFranchiseEntity>;
 
             var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
             var mapper = config.CreateMapper();
-            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
-
             var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
-            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseEntity);
-            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
-
             var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
 
-            var exception = Assert.ThrowsAsync<NotFoundElementException>(async () => await filmFranchiseService.GetFranchiseAsync(2, false));
-            Assert.Equal("Film Franchise with id:2 does not exists.", exception.Result.Message);
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchisesAsync("asc","id")).ReturnsAsync(FilmFranchisesEnumerable);
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+
+            
+            var filmFranchises = await filmFranchiseService.GetFranchisesAsync("asc", "id");
+            Assert.NotEmpty(filmFranchises);
         }
     }
 }
