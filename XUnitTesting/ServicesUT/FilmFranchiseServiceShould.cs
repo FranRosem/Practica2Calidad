@@ -196,5 +196,51 @@ namespace XUnitTesting.ServicesUT
             var exception = Assert.ThrowsAsync<InvalidElementOperationException>(async () => await filmFranchiseService.GetFranchisesAsync(direction, "id"));
             Assert.Equal($"Invalid direction value: {direction}. The only values for order in querys are: asc or desc.", exception.Result.Message);
         }
+
+        [Fact]
+        public async Task UpdateFranchiseAsync()
+        {
+            var filmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var filmFranchiseUpdatedEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "DC",
+                FilmProductor = "Warner Bros",
+                FilmProducer = "Dan Lin",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
+
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            filmFranchiseRepositoryMock.Setup(f => f.UpdateFranchiseAsync(1, filmFranchiseEntity));
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseUpdatedEntity);
+
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+            var filmFranchiseUpdated = await filmFranchiseService.UpdateFranchiseAsync(1, filmFranchiseModel);
+
+            Assert.NotNull(filmFranchiseUpdated);
+            Assert.Equal(filmFranchiseUpdated.Franchise, filmFranchiseModel.Franchise);
+            Assert.Equal(filmFranchiseUpdated.FilmProductor, filmFranchiseModel.FilmProductor);
+            Assert.Equal(filmFranchiseUpdated.FilmProducer, filmFranchiseModel.FilmProducer);
+            Assert.Equal(filmFranchiseUpdated.FirstMovieYear, filmFranchiseModel.FirstMovieYear);
+        }
     }
 }
