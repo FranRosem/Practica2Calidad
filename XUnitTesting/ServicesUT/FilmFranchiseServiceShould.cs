@@ -108,5 +108,34 @@ namespace XUnitTesting.ServicesUT
             Assert.Equal(filmFranchise.FilmProducer, filmFranchiseModel.FilmProducer);
             Assert.Equal(filmFranchise.FirstMovieYear, filmFranchiseModel.FirstMovieYear);
         }
+
+        [Fact]
+        public void ErrorGetFranchiseAsync()
+        {
+            var filmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
+
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseEntity);
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+
+            var exception = Assert.ThrowsAsync<NotFoundElementException>(async () => await filmFranchiseService.GetFranchiseAsync(2, false));
+            Assert.Equal("Film Franchise with id:2 does not exists.", exception.Result.Message);
+        }
     }
 }
