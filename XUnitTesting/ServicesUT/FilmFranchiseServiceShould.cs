@@ -75,5 +75,38 @@ namespace XUnitTesting.ServicesUT
             var exception = Assert.ThrowsAsync<Exception>(async () => await filmFranchiseService.CreateFranchiseAsync(filmFranchiseModel));
             Assert.Equal("Database Error.", exception.Result.Message);
         }
+
+
+        [Fact]
+        public async Task GetFranchiseAsync()
+        {
+            var filmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
+
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseEntity);
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+            var filmFranchise = await filmFranchiseService.GetFranchiseAsync(1, false);
+            Assert.Equal(filmFranchise.Id, filmFranchiseModel.Id);
+            Assert.Equal(filmFranchise.Franchise, filmFranchiseModel.Franchise);
+            Assert.Equal(filmFranchise.FilmProductor, filmFranchiseModel.FilmProductor);
+            Assert.Equal(filmFranchise.FilmProducer, filmFranchiseModel.FilmProducer);
+            Assert.Equal(filmFranchise.FirstMovieYear, filmFranchiseModel.FirstMovieYear);
+        }
     }
 }
