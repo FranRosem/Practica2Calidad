@@ -13,13 +13,17 @@ namespace XUnitTesting
         public void ValidateMovieSetId()
         {
             //Arrange
-            var movie = new MovieModel();
-            int movieId = 1;
-            movie.Id = movieId;
+            var movie = new MovieModel
+            {
+                Id = 1,
+            };
+            
+            
             //Act
             var getValue=movie.Id;
             //Assert
-            Assert.Equal(movieId, getValue);
+            Assert.Equal(1, getValue);
+            Assert.NotNull(movie.Id);
         }
 
         [Fact]
@@ -70,6 +74,7 @@ namespace XUnitTesting
         public void ValidateImagePath()
         {
             MovieModel movie = new MovieModel();
+            
             movie.ImagePath = "C:\\uNIVERSIDAD\\Preparacion y eva proyect\\dell.png";
             var listExtencionImage = new List<string>() {".png"};
             //Assert.Contains(".png", movie.ImagePath);
