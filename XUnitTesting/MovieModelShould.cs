@@ -23,7 +23,6 @@ namespace XUnitTesting
             var getValue=movie.Id;
             //Assert
             Assert.Equal(1, getValue);
-            Assert.NotNull(movie.Id);
         }
 
         [Fact]
