@@ -16,6 +16,13 @@ namespace XUnitTesting.ServicesUT
 {
     public class FilmFranchiseServiceShould
     {
+        private HashSet<string> _allowedSortValues = new HashSet<string>
+        {
+            "id",
+            "name",
+            "year"
+        };
+
         [Fact]
         public async Task CreateFranchiseAsync()
         {
@@ -107,6 +114,8 @@ namespace XUnitTesting.ServicesUT
             Assert.Equal(filmFranchise.FilmProductor, filmFranchiseModel.FilmProductor);
             Assert.Equal(filmFranchise.FilmProducer, filmFranchiseModel.FilmProducer);
             Assert.Equal(filmFranchise.FirstMovieYear, filmFranchiseModel.FirstMovieYear);
+            Assert.Null(filmFranchise.ImagePath);
+            Assert.Empty(filmFranchise.Movies);
         }
 
         [Fact]
@@ -160,6 +169,19 @@ namespace XUnitTesting.ServicesUT
             
             var filmFranchises = await filmFranchiseService.GetFranchisesAsync("asc", "id");
             Assert.NotEmpty(filmFranchises);
+        }
+
+        [Fact]
+        public void OrderByErrorGetFranchisesAsync()
+        {
+            string orderBy = "center";
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+
+            var exception = Assert.ThrowsAsync<InvalidElementOperationException>(async () => await filmFranchiseService.GetFranchisesAsync("id", orderBy));
+            Assert.Equal($"Invalid orderBy value: {orderBy}. The allowed values for querys are: {string.Join(',', _allowedSortValues)}", exception.Result.Message);
         }
     }
 }

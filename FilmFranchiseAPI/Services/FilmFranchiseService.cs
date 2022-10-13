@@ -60,8 +60,8 @@ namespace FilmFranchiseAPI.Services
                 throw new InvalidElementOperationException($"Invalid direction value: {direction}. The only values for order in querys are: asc or desc.");
             }
 
-            var bookStoreEntityList = await _franchiseRepository.GetFranchisesAsync(direction, orderBy);
-            return _mapper.Map<IEnumerable<FilmFranchiseModel>>(bookStoreEntityList);
+            var filmFranchiseEntityList = await _franchiseRepository.GetFranchisesAsync(direction, orderBy);
+            return _mapper.Map<IEnumerable<FilmFranchiseModel>>(filmFranchiseEntityList);
         }
         //Cantidad de pruebas 2
         public async Task<FilmFranchiseModel> UpdateFranchiseAsync(int filmFranchiseId, FilmFranchiseModel filmFranchise)

@@ -6886,11 +6886,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+      "projectUniqueName": "D:\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
       "projectName": "FilmFranchiseAPI",
-      "projectPath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+      "projectPath": "D:\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
       "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
-      "outputPath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\obj\\",
+      "outputPath": "D:\\Practica2Calidad\\FilmFranchiseAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

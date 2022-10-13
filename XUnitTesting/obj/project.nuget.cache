@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9kIhpzJIQSZ0Zsc0AFAiJwvKwNIkEocaJJmvSWm7WCErH5tGuljwYnJCCB/quyesqdIRm//NzSBjAAlv9YIo8A==",
+  "dgSpecHash": "9QWigw7c/rFoaLPaCRJUS+C1aiT/3JMCGd10+syyTSHbxu1KjmkDf2JUWRLuAGTur6df+Rot7nQR0RcjRsLPyQ==",
   "success": true,
-  "projectFilePath": "D:\\Practicas Calidad\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
+  "projectFilePath": "D:\\Practica2Calidad\\XUnitTesting\\XUnitTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\frank\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\frank\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

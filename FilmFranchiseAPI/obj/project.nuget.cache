@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qtos4siFNmSb6RQewdVKJgmwvODDk0FvuZ9Uq0ZIKxrAIIQqUPd0XaAhb0+H6d3LsOLSe6keaI/xer+QpHYa4Q==",
+  "dgSpecHash": "yX5EmaPcoT9bgzFgawEl7LCOlqDVvoAnvgoUVZomt+u7PiJ0hKlXQUOT9fxM8Rv4Q15ESWdAbqhHTBTR1aJqjg==",
   "success": true,
-  "projectFilePath": "D:\\Practicas Calidad\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
+  "projectFilePath": "D:\\Practica2Calidad\\FilmFranchiseAPI\\FilmFranchiseAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\frank\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\frank\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
