@@ -180,8 +180,21 @@ namespace XUnitTesting.ServicesUT
             var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
             var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
 
-            var exception = Assert.ThrowsAsync<InvalidElementOperationException>(async () => await filmFranchiseService.GetFranchisesAsync("id", orderBy));
+            var exception = Assert.ThrowsAsync<InvalidElementOperationException>(async () => await filmFranchiseService.GetFranchisesAsync("asc", orderBy));
             Assert.Equal($"Invalid orderBy value: {orderBy}. The allowed values for querys are: {string.Join(',', _allowedSortValues)}", exception.Result.Message);
+        }
+
+        [Fact]
+        public void DirectionErrorGetFranchisesAsync()
+        {
+            string direction = "bottom";
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+
+            var exception = Assert.ThrowsAsync<InvalidElementOperationException>(async () => await filmFranchiseService.GetFranchisesAsync(direction, "id"));
+            Assert.Equal($"Invalid direction value: {direction}. The only values for order in querys are: asc or desc.", exception.Result.Message);
         }
     }
 }
