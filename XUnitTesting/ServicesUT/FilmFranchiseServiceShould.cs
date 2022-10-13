@@ -284,5 +284,35 @@ namespace XUnitTesting.ServicesUT
             var exception = Assert.ThrowsAsync<Exception>(async () => await filmFranchiseService.UpdateFranchiseAsync(1, filmFranchiseModel));
             Assert.Equal("Database Error.", exception.Result.Message);
         }
+
+        [Fact]
+        public void DeleteFranchiseAsync()
+        {
+            var filmFranchiseEntity = new FilmFranchiseEntity()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+            var filmFranchiseModel = mapper.Map<FilmFranchiseModel>(filmFranchiseEntity);
+
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+
+            filmFranchiseRepositoryMock.Setup(f => f.DeleteFranchiseAsync(1));
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseEntity);
+
+            var filmFranchiseService = new FilmFranchiseService(filmFranchiseRepositoryMock.Object, mapper);
+            var result = filmFranchiseService.DeleteFranchiseAsync(1);
+            Assert.Equal(1, result.Id);
+        }
     }
 }
