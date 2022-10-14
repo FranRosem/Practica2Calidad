@@ -45,5 +45,36 @@ namespace XUnitTesting.ControllersUT
             Assert.True(responseValues.IsSuccess);
             Assert.Equal(200, okResult.StatusCode);
         }
+
+        [Fact]
+        public async Task BadRequestRegisterUserAsync()
+        {
+            var registerModel = new RegisterViewModel()
+            {
+                Email = "yonpol@hotmail.com",
+                Password = "yonpol123",
+                ConfirmPassword = "yonpol123"
+            };
+            var userResponse = new UserManagerResponse
+            {
+                Token = "Confirm password doesn't match the password",
+                IsSuccess = false
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+
+            var userServiceMock = new Mock<IUserService>();
+            userServiceMock.Setup(u => u.RegisterUserAsync(registerModel)).ReturnsAsync(userResponse);
+
+            var authController = new AuthController(userServiceMock.Object);
+            var result = await authController.RegisterAsync(registerModel);
+            var badResult = result as BadRequestObjectResult;
+            var responseValues = badResult.Value as UserManagerResponse;
+
+            Assert.NotNull(badResult);
+            Assert.False(responseValues.IsSuccess);
+            Assert.Equal(400, badResult.StatusCode);
+        }
     }
 }
