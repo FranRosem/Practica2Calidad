@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.3005" branch-rate="0.06709999999999999" version="1.9" timestamp="1665688385" lines-covered="278" lines-valid="925" branches-covered="9" branches-valid="134">
+<coverage line-rate="0.419" branch-rate="0.11939999999999999" version="1.9" timestamp="1665698745" lines-covered="448" lines-valid="1069" branches-covered="16" branches-valid="134">
   <sources>
-    <source>D:\</source>
+    <source>D:\Practicas Calidad\Practica2Calidad\</source>
     <source>C:\</source>
   </sources>
   <packages>
-    <package name="FilmFranchiseAPI" line-rate="0.1065" branch-rate="0.053" complexity="212">
+    <package name="FilmFranchiseAPI" line-rate="0.1424" branch-rate="0.106" complexity="212">
       <classes>
-        <class name="FilmFranchiseAPI.Program" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Program.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Program" filename="FilmFranchiseAPI\Program.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -37,7 +37,7 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Startup" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Startup.cs" line-rate="0" branch-rate="0" complexity="5">
+        <class name="FilmFranchiseAPI.Startup" filename="FilmFranchiseAPI\Startup.cs" line-rate="0" branch-rate="0" complexity="5">
           <methods>
             <method name="get_Configuration" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -199,7 +199,7 @@
             <line number="34" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FileService" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FileService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.FileService" filename="FilmFranchiseAPI\Services\FileService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="UploadFile" signature="(Microsoft.AspNetCore.Http.IFormFile)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -251,39 +251,39 @@
             <line number="32" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(FilmFranchiseAPI.Data.Repository.IFilmFranchiseRepository,AutoMapper.IMapper)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="5" branch="False" />
-                <line number="18" hits="5" branch="False" />
-                <line number="19" hits="5" branch="False" />
-                <line number="20" hits="5" branch="False" />
-                <line number="21" hits="5" branch="False" />
-                <line number="22" hits="5" branch="False" />
-                <line number="24" hits="5" branch="False" />
-                <line number="25" hits="5" branch="False" />
-                <line number="26" hits="5" branch="False" />
-                <line number="27" hits="5" branch="False" />
-                <line number="28" hits="5" branch="False" />
+                <line number="17" hits="11" branch="False" />
+                <line number="18" hits="11" branch="False" />
+                <line number="19" hits="11" branch="False" />
+                <line number="20" hits="11" branch="False" />
+                <line number="21" hits="11" branch="False" />
+                <line number="22" hits="11" branch="False" />
+                <line number="24" hits="11" branch="False" />
+                <line number="25" hits="11" branch="False" />
+                <line number="26" hits="11" branch="False" />
+                <line number="27" hits="11" branch="False" />
+                <line number="28" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="5" branch="False" />
-            <line number="18" hits="5" branch="False" />
-            <line number="19" hits="5" branch="False" />
-            <line number="20" hits="5" branch="False" />
-            <line number="21" hits="5" branch="False" />
-            <line number="22" hits="5" branch="False" />
-            <line number="24" hits="5" branch="False" />
-            <line number="25" hits="5" branch="False" />
-            <line number="26" hits="5" branch="False" />
-            <line number="27" hits="5" branch="False" />
-            <line number="28" hits="5" branch="False" />
+            <line number="17" hits="11" branch="False" />
+            <line number="18" hits="11" branch="False" />
+            <line number="19" hits="11" branch="False" />
+            <line number="20" hits="11" branch="False" />
+            <line number="21" hits="11" branch="False" />
+            <line number="22" hits="11" branch="False" />
+            <line number="24" hits="11" branch="False" />
+            <line number="25" hits="11" branch="False" />
+            <line number="26" hits="11" branch="False" />
+            <line number="27" hits="11" branch="False" />
+            <line number="28" hits="11" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;CreateFranchiseAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;CreateFranchiseAsync&gt;d__4" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
@@ -319,90 +319,90 @@
             <line number="40" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;DeleteFranchiseAsync&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;DeleteFranchiseAsync&gt;d__8" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="85" hits="0" branch="False" />
-                <line number="86" hits="0" branch="False" />
-                <line number="87" hits="0" branch="False" />
-                <line number="88" hits="0" branch="False" />
-                <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="85" hits="2" branch="False" />
+                <line number="86" hits="2" branch="False" />
+                <line number="87" hits="2" branch="False" />
+                <line number="88" hits="2" branch="False" />
+                <line number="89" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="399" type="jump" coverage="0%" />
+                    <condition number="399" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="90" hits="0" branch="False" />
-                <line number="91" hits="0" branch="False" />
-                <line number="93" hits="0" branch="False" />
+                <line number="90" hits="1" branch="False" />
+                <line number="91" hits="1" branch="False" />
+                <line number="93" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="85" hits="0" branch="False" />
-            <line number="86" hits="0" branch="False" />
-            <line number="87" hits="0" branch="False" />
-            <line number="88" hits="0" branch="False" />
-            <line number="89" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="85" hits="2" branch="False" />
+            <line number="86" hits="2" branch="False" />
+            <line number="87" hits="2" branch="False" />
+            <line number="88" hits="2" branch="False" />
+            <line number="89" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="399" type="jump" coverage="0%" />
+                <condition number="399" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="90" hits="0" branch="False" />
-            <line number="91" hits="0" branch="False" />
-            <line number="93" hits="0" branch="False" />
+            <line number="90" hits="1" branch="False" />
+            <line number="91" hits="1" branch="False" />
+            <line number="93" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;GetFranchiseAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;GetFranchiseAsync&gt;d__5" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="43" hits="2" branch="False" />
-                <line number="44" hits="2" branch="False" />
-                <line number="46" hits="2" branch="True" condition-coverage="100% (2/2)">
+                <line number="43" hits="6" branch="False" />
+                <line number="44" hits="6" branch="False" />
+                <line number="46" hits="6" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="170" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="47" hits="1" branch="False" />
-                <line number="49" hits="1" branch="False" />
-                <line number="50" hits="1" branch="False" />
+                <line number="49" hits="5" branch="False" />
+                <line number="50" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="43" hits="2" branch="False" />
-            <line number="44" hits="2" branch="False" />
-            <line number="46" hits="2" branch="True" condition-coverage="100% (2/2)">
+            <line number="43" hits="6" branch="False" />
+            <line number="44" hits="6" branch="False" />
+            <line number="46" hits="6" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="170" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="47" hits="1" branch="False" />
-            <line number="49" hits="1" branch="False" />
-            <line number="50" hits="1" branch="False" />
+            <line number="49" hits="5" branch="False" />
+            <line number="50" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;GetFranchisesAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="0.6" branch-rate="0.5" complexity="6">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;GetFranchisesAsync&gt;d__6" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0.6" branch-rate="0.5" complexity="6">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="53" hits="3" branch="False" />
+                <line number="54" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="50" type="jump" coverage="50%" />
+                    <condition number="50" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="55" hits="0" branch="False" />
-                <line number="56" hits="0" branch="False" />
-                <line number="58" hits="1" branch="True" condition-coverage="50% (2/4)">
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
+                <line number="58" hits="2" branch="True" condition-coverage="100% (4/4)">
                   <conditions>
-                    <condition number="114" type="jump" coverage="50%" />
-                    <condition number="137" type="jump" coverage="50%" />
+                    <condition number="114" type="jump" coverage="100%" />
+                    <condition number="137" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
                 <line number="63" hits="1" branch="False" />
                 <line number="64" hits="1" branch="False" />
                 <line number="65" hits="1" branch="False" />
@@ -410,68 +410,68 @@
             </method>
           </methods>
           <lines>
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="53" hits="3" branch="False" />
+            <line number="54" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="50" type="jump" coverage="50%" />
+                <condition number="50" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="55" hits="0" branch="False" />
-            <line number="56" hits="0" branch="False" />
-            <line number="58" hits="1" branch="True" condition-coverage="50% (2/4)">
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
+            <line number="58" hits="2" branch="True" condition-coverage="100% (4/4)">
               <conditions>
-                <condition number="114" type="jump" coverage="50%" />
-                <condition number="137" type="jump" coverage="50%" />
+                <condition number="114" type="jump" coverage="100%" />
+                <condition number="137" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
             <line number="63" hits="1" branch="False" />
             <line number="64" hits="1" branch="False" />
             <line number="65" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;UpdateFranchiseAsync&gt;d__7" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.FilmFranchiseService/&lt;UpdateFranchiseAsync&gt;d__7" filename="FilmFranchiseAPI\Services\FilmFranchiseService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="68" hits="0" branch="False" />
-                <line number="69" hits="0" branch="False" />
-                <line number="70" hits="0" branch="False" />
-                <line number="71" hits="0" branch="False" />
-                <line number="73" hits="0" branch="False" />
-                <line number="75" hits="0" branch="False" />
-                <line number="76" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="68" hits="2" branch="False" />
+                <line number="69" hits="2" branch="False" />
+                <line number="70" hits="2" branch="False" />
+                <line number="71" hits="2" branch="False" />
+                <line number="73" hits="2" branch="False" />
+                <line number="75" hits="2" branch="False" />
+                <line number="76" hits="2" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="451" type="jump" coverage="0%" />
+                    <condition number="451" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="77" hits="0" branch="False" />
-                <line number="78" hits="0" branch="False" />
-                <line number="81" hits="0" branch="False" />
-                <line number="82" hits="0" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="81" hits="1" branch="False" />
+                <line number="82" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="68" hits="0" branch="False" />
-            <line number="69" hits="0" branch="False" />
-            <line number="70" hits="0" branch="False" />
-            <line number="71" hits="0" branch="False" />
-            <line number="73" hits="0" branch="False" />
-            <line number="75" hits="0" branch="False" />
-            <line number="76" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="68" hits="2" branch="False" />
+            <line number="69" hits="2" branch="False" />
+            <line number="70" hits="2" branch="False" />
+            <line number="71" hits="2" branch="False" />
+            <line number="73" hits="2" branch="False" />
+            <line number="75" hits="2" branch="False" />
+            <line number="76" hits="2" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="451" type="jump" coverage="0%" />
+                <condition number="451" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="77" hits="0" branch="False" />
-            <line number="78" hits="0" branch="False" />
-            <line number="81" hits="0" branch="False" />
-            <line number="82" hits="0" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="81" hits="1" branch="False" />
+            <line number="82" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Services.MovieService" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(FilmFranchiseAPI.Data.Repository.IFilmFranchiseRepository,AutoMapper.IMapper)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -491,7 +491,7 @@
             <line number="21" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;CreateMovieAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;CreateMovieAsync&gt;d__4" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -531,7 +531,7 @@
             <line number="44" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;DeleteMovieAsync&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;DeleteMovieAsync&gt;d__8" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -565,7 +565,7 @@
             <line number="96" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;GetMovieAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;GetMovieAsync&gt;d__5" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -601,7 +601,7 @@
             <line number="56" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;GetMoviesAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;GetMoviesAsync&gt;d__6" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -639,7 +639,7 @@
             <line number="70" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;UpdateMovieAsync&gt;d__7" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;UpdateMovieAsync&gt;d__7" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -679,7 +679,7 @@
             <line number="85" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.MovieService/&lt;ValidateFranchiseAsync&gt;d__3" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.MovieService/&lt;ValidateFranchiseAsync&gt;d__3" filename="FilmFranchiseAPI\Services\MovieService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -707,7 +707,7 @@
             <line number="29" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.Security.UserService" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name=".ctor" signature="(Microsoft.AspNetCore.Identity.UserManager`1&lt;Microsoft.AspNetCore.Identity.IdentityUser&gt;,Microsoft.AspNetCore.Identity.RoleManager`1&lt;Microsoft.AspNetCore.Identity.IdentityRole&gt;,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Options.IOptions`1&lt;Microsoft.AspNetCore.Identity.IdentityOptions&gt;)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -739,7 +739,7 @@
             <line number="30" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;&gt;c" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;&gt;c" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="&lt;RegisterUserAsync&gt;b__6_0" signature="(Microsoft.AspNetCore.Identity.IdentityError)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -757,7 +757,7 @@
             <line number="154" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;CreateRoleAsync&gt;d__7" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;CreateRoleAsync&gt;d__7" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -815,7 +815,7 @@
             <line number="156" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;CreateUserRoleAsync&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="8">
+        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;CreateUserRoleAsync&gt;d__8" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="8">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="8">
               <lines>
@@ -933,7 +933,7 @@
             <line number="207" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;LoginUserAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;LoginUserAsync&gt;d__5" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1051,7 +1051,7 @@
             <line number="87" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;RegisterUserAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="6">
+        <class name="FilmFranchiseAPI.Services.Security.UserService/&lt;RegisterUserAsync&gt;d__6" filename="FilmFranchiseAPI\Services\Security\UserService.cs" line-rate="0" branch-rate="0" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="6">
               <lines>
@@ -1143,7 +1143,7 @@
             <line number="127" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.FilmFranchiseFormModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\FilmFranchiseFormModel.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Models.FilmFranchiseFormModel" filename="FilmFranchiseAPI\Models\FilmFranchiseFormModel.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="get_Image" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1155,73 +1155,73 @@
             <line number="11" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.FilmFranchiseModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\FilmFranchiseModel.cs" line-rate="1" branch-rate="1" complexity="10">
+        <class name="FilmFranchiseAPI.Models.FilmFranchiseModel" filename="FilmFranchiseAPI\Models\FilmFranchiseModel.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="14" branch="False" />
+                <line number="11" hits="25" branch="False" />
               </lines>
             </method>
             <method name="get_Franchise" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="13" branch="False" />
+                <line number="13" hits="26" branch="False" />
               </lines>
             </method>
             <method name="get_FilmProductor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="13" branch="False" />
+                <line number="15" hits="26" branch="False" />
               </lines>
             </method>
             <method name="get_FilmProducer" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="13" branch="False" />
+                <line number="17" hits="26" branch="False" />
               </lines>
             </method>
             <method name="get_FirstMovieYear" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="13" branch="False" />
+                <line number="19" hits="26" branch="False" />
               </lines>
             </method>
             <method name="get_LastMovieYear" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="9" branch="False" />
+                <line number="20" hits="20" branch="False" />
               </lines>
             </method>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="17" branch="False" />
+                <line number="21" hits="37" branch="False" />
               </lines>
             </method>
             <method name="get_MovieCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="17" branch="False" />
+                <line number="22" hits="37" branch="False" />
               </lines>
             </method>
             <method name="get_ImagePath" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="23" hits="9" branch="False" />
+                <line number="23" hits="21" branch="False" />
               </lines>
             </method>
             <method name="get_Movies" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="24" hits="9" branch="False" />
+                <line number="24" hits="21" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="14" branch="False" />
-            <line number="13" hits="13" branch="False" />
-            <line number="15" hits="13" branch="False" />
-            <line number="17" hits="13" branch="False" />
-            <line number="19" hits="13" branch="False" />
-            <line number="20" hits="9" branch="False" />
-            <line number="21" hits="17" branch="False" />
-            <line number="22" hits="17" branch="False" />
-            <line number="23" hits="9" branch="False" />
-            <line number="24" hits="9" branch="False" />
+            <line number="11" hits="25" branch="False" />
+            <line number="13" hits="26" branch="False" />
+            <line number="15" hits="26" branch="False" />
+            <line number="17" hits="26" branch="False" />
+            <line number="19" hits="26" branch="False" />
+            <line number="20" hits="20" branch="False" />
+            <line number="21" hits="37" branch="False" />
+            <line number="22" hits="37" branch="False" />
+            <line number="23" hits="21" branch="False" />
+            <line number="24" hits="21" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.MovieFormModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\MovieFormModel.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Models.MovieFormModel" filename="FilmFranchiseAPI\Models\MovieFormModel.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="get_Image" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1233,7 +1233,7 @@
             <line number="11" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.MovieModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\MovieModel.cs" line-rate="1" branch-rate="1" complexity="7">
+        <class name="FilmFranchiseAPI.Models.MovieModel" filename="FilmFranchiseAPI\Models\MovieModel.cs" line-rate="1" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1281,7 +1281,7 @@
             <line number="22" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.Security.CreateRoleViewModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\Security\CreateRoleViewModel.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Models.Security.CreateRoleViewModel" filename="FilmFranchiseAPI\Models\Security\CreateRoleViewModel.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1299,7 +1299,7 @@
             <line number="14" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.Security.CreateUserRoleViewModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\Security\CreateUserRoleViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Models.Security.CreateUserRoleViewModel" filename="FilmFranchiseAPI\Models\Security\CreateUserRoleViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="get_UserId" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1317,7 +1317,7 @@
             <line number="11" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.Security.LoginViewModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\Security\LoginViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
+        <class name="FilmFranchiseAPI.Models.Security.LoginViewModel" filename="FilmFranchiseAPI\Models\Security\LoginViewModel.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
             <method name="get_Email" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1335,7 +1335,7 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.Security.RegisterViewModel" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\Security\RegisterViewModel.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="FilmFranchiseAPI.Models.Security.RegisterViewModel" filename="FilmFranchiseAPI\Models\Security\RegisterViewModel.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="get_Email" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1359,7 +1359,7 @@
             <line number="22" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Models.Security.UserManagerResponse" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Models\Security\UserManagerResponse.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="FilmFranchiseAPI.Models.Security.UserManagerResponse" filename="FilmFranchiseAPI\Models\Security\UserManagerResponse.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_Token" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1389,23 +1389,23 @@
             <line number="13" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Exceptions.InvalidElementOperationException" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Exceptions\InvalidElementOperationException.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Exceptions.InvalidElementOperationException" filename="FilmFranchiseAPI\Exceptions\InvalidElementOperationException.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="0" branch="False" />
-                <line number="11" hits="0" branch="False" />
-                <line number="13" hits="0" branch="False" />
+                <line number="10" hits="2" branch="False" />
+                <line number="11" hits="2" branch="False" />
+                <line number="13" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Exceptions.NotFoundElementException" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Exceptions\NotFoundElementException.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Exceptions.NotFoundElementException" filename="FilmFranchiseAPI\Exceptions\NotFoundElementException.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1421,37 +1421,37 @@
             <line number="13" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.AutoMapperProfile" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\AutoMapperProfile.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Data.AutoMapperProfile" filename="FilmFranchiseAPI\Data\AutoMapperProfile.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="5" branch="False" />
-                <line number="14" hits="5" branch="False" />
-                <line number="15" hits="5" branch="False" />
-                <line number="16" hits="5" branch="False" />
-                <line number="18" hits="5" branch="False" />
-                <line number="19" hits="5" branch="False" />
-                <line number="20" hits="5" branch="False" />
-                <line number="21" hits="5" branch="False" />
-                <line number="22" hits="5" branch="False" />
-                <line number="23" hits="5" branch="False" />
+                <line number="13" hits="11" branch="False" />
+                <line number="14" hits="11" branch="False" />
+                <line number="15" hits="11" branch="False" />
+                <line number="16" hits="11" branch="False" />
+                <line number="18" hits="11" branch="False" />
+                <line number="19" hits="11" branch="False" />
+                <line number="20" hits="11" branch="False" />
+                <line number="21" hits="11" branch="False" />
+                <line number="22" hits="11" branch="False" />
+                <line number="23" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="5" branch="False" />
-            <line number="14" hits="5" branch="False" />
-            <line number="15" hits="5" branch="False" />
-            <line number="16" hits="5" branch="False" />
-            <line number="18" hits="5" branch="False" />
-            <line number="19" hits="5" branch="False" />
-            <line number="20" hits="5" branch="False" />
-            <line number="21" hits="5" branch="False" />
-            <line number="22" hits="5" branch="False" />
-            <line number="23" hits="5" branch="False" />
+            <line number="13" hits="11" branch="False" />
+            <line number="14" hits="11" branch="False" />
+            <line number="15" hits="11" branch="False" />
+            <line number="16" hits="11" branch="False" />
+            <line number="18" hits="11" branch="False" />
+            <line number="19" hits="11" branch="False" />
+            <line number="20" hits="11" branch="False" />
+            <line number="21" hits="11" branch="False" />
+            <line number="22" hits="11" branch="False" />
+            <line number="23" hits="11" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.FilmFranchiseDbContext" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\FilmFranchiseDbContext.cs" line-rate="0" branch-rate="1" complexity="4">
+        <class name="FilmFranchiseAPI.Data.FilmFranchiseDbContext" filename="FilmFranchiseAPI\Data\FilmFranchiseDbContext.cs" line-rate="0" branch-rate="1" complexity="4">
           <methods>
             <method name="get_FilmFranchises" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1501,7 +1501,7 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="3">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
             <method name="CreateFranchise" signature="(FilmFranchiseAPI.Data.Entities.FilmFranchiseEntity)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1541,7 +1541,7 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;DeleteFranchiseAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;DeleteFranchiseAsync&gt;d__6" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1559,7 +1559,7 @@
             <line number="81" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;DeleteMovieAsync&gt;d__11" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;DeleteMovieAsync&gt;d__11" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1577,7 +1577,7 @@
             <line number="121" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetFranchiseAsync&gt;d__3" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetFranchiseAsync&gt;d__3" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1613,7 +1613,7 @@
             <line number="35" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetFranchisesAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="18">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetFranchisesAsync&gt;d__4" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="18">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="18">
               <lines>
@@ -1693,7 +1693,7 @@
             <line number="59" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetMovieAsync&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetMovieAsync&gt;d__8" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1713,7 +1713,7 @@
             <line number="97" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetMoviesAsync&gt;d__9" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;GetMoviesAsync&gt;d__9" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1735,7 +1735,7 @@
             <line number="105" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;SaveChangesAsync&gt;d__12" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;SaveChangesAsync&gt;d__12" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -1769,7 +1769,7 @@
             <line number="136" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;UpdateFranchiseAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="16">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;UpdateFranchiseAsync&gt;d__5" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="16">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="16">
               <lines>
@@ -1865,7 +1865,7 @@
             <line number="74" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;UpdateMovieAsync&gt;d__10" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="10">
+        <class name="FilmFranchiseAPI.Data.Repository.FilmFranchiseRepository/&lt;UpdateMovieAsync&gt;d__10" filename="FilmFranchiseAPI\Data\Repository\FilmFranchiseRepository.cs" line-rate="0" branch-rate="0" complexity="10">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="10">
               <lines>
@@ -1931,73 +1931,73 @@
             <line number="115" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Entities.FilmFranchiseEntity" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Entities\FilmFranchiseEntity.cs" line-rate="1" branch-rate="1" complexity="10">
+        <class name="FilmFranchiseAPI.Data.Entities.FilmFranchiseEntity" filename="FilmFranchiseAPI\Data\Entities\FilmFranchiseEntity.cs" line-rate="1" branch-rate="1" complexity="10">
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="14" branch="False" />
+                <line number="13" hits="33" branch="False" />
               </lines>
             </method>
             <method name="get_Franchise" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="14" branch="False" />
+                <line number="14" hits="31" branch="False" />
               </lines>
             </method>
             <method name="get_FilmProductor" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="14" branch="False" />
+                <line number="15" hits="31" branch="False" />
               </lines>
             </method>
             <method name="get_FilmProducer" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="14" branch="False" />
+                <line number="16" hits="31" branch="False" />
               </lines>
             </method>
             <method name="get_FirstMovieYear" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="14" branch="False" />
+                <line number="17" hits="31" branch="False" />
               </lines>
             </method>
             <method name="get_LastMovieYear" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="14" branch="False" />
+                <line number="18" hits="31" branch="False" />
               </lines>
             </method>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="21" branch="False" />
+                <line number="19" hits="46" branch="False" />
               </lines>
             </method>
             <method name="get_MovieCount" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="21" branch="False" />
+                <line number="20" hits="46" branch="False" />
               </lines>
             </method>
             <method name="get_ImagePath" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="9" branch="False" />
+                <line number="21" hits="20" branch="False" />
               </lines>
             </method>
             <method name="get_Movies" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="9" branch="False" />
+                <line number="22" hits="20" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="14" branch="False" />
-            <line number="14" hits="14" branch="False" />
-            <line number="15" hits="14" branch="False" />
-            <line number="16" hits="14" branch="False" />
-            <line number="17" hits="14" branch="False" />
-            <line number="18" hits="14" branch="False" />
-            <line number="19" hits="21" branch="False" />
-            <line number="20" hits="21" branch="False" />
-            <line number="21" hits="9" branch="False" />
-            <line number="22" hits="9" branch="False" />
+            <line number="13" hits="33" branch="False" />
+            <line number="14" hits="31" branch="False" />
+            <line number="15" hits="31" branch="False" />
+            <line number="16" hits="31" branch="False" />
+            <line number="17" hits="31" branch="False" />
+            <line number="18" hits="31" branch="False" />
+            <line number="19" hits="46" branch="False" />
+            <line number="20" hits="46" branch="False" />
+            <line number="21" hits="20" branch="False" />
+            <line number="22" hits="20" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Data.Entities.MovieEntity" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Data\Entities\MovieEntity.cs" line-rate="0" branch-rate="1" complexity="7">
+        <class name="FilmFranchiseAPI.Data.Entities.MovieEntity" filename="FilmFranchiseAPI\Data\Entities\MovieEntity.cs" line-rate="0" branch-rate="1" complexity="7">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2045,7 +2045,7 @@
             <line number="25" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.AuthController" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.AuthController" filename="FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(FilmFranchiseAPI.Services.Security.IUserService)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2063,7 +2063,7 @@
             <line number="20" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;CreateRolenAsync&gt;d__3" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;CreateRolenAsync&gt;d__3" filename="FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -2109,7 +2109,7 @@
             <line number="54" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;CreateUserRolenAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;CreateUserRolenAsync&gt;d__4" filename="FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -2155,7 +2155,7 @@
             <line number="71" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;LoginAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;LoginAsync&gt;d__5" filename="FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -2201,7 +2201,7 @@
             <line number="89" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;RegisterAsync&gt;d__2" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
+        <class name="FilmFranchiseAPI.Controllers.AuthController/&lt;RegisterAsync&gt;d__2" filename="FilmFranchiseAPI\Controllers\AuthController.cs" line-rate="0" branch-rate="0" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="4">
               <lines>
@@ -2245,7 +2245,7 @@
             <line number="37" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(FilmFranchiseAPI.Services.IFilmFranchiseService,FilmFranchiseAPI.Services.IFileService)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2265,7 +2265,7 @@
             <line number="24" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;CreateFranchiseFormAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;CreateFranchiseFormAsync&gt;d__5" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2309,7 +2309,7 @@
             <line number="92" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;DeleteFranchise&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;DeleteFranchise&gt;d__8" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2341,7 +2341,7 @@
             <line number="164" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;GetFranchiseAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;GetFranchiseAsync&gt;d__4" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2389,7 +2389,7 @@
             <line number="70" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;GetFranchisesAsync&gt;d__3" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;GetFranchisesAsync&gt;d__3" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2427,7 +2427,7 @@
             <line number="46" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;PostFranchiseAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;PostFranchiseAsync&gt;d__6" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2471,7 +2471,7 @@
             <line number="114" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;PutFranchiseAsync&gt;d__7" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.FilmFranchisesController/&lt;PutFranchiseAsync&gt;d__7" filename="FilmFranchiseAPI\Controllers\FilmFranchisesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2533,7 +2533,7 @@
             <line number="146" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name=".ctor" signature="(FilmFranchiseAPI.Services.IMovieService,FilmFranchiseAPI.Services.IFileService)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2553,7 +2553,7 @@
             <line number="25" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;CreateBookFormAsync&gt;d__5" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;CreateBookFormAsync&gt;d__5" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2597,7 +2597,7 @@
             <line number="81" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;DeleteMovieAsync&gt;d__8" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;DeleteMovieAsync&gt;d__8" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2629,7 +2629,7 @@
             <line number="153" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;GetMovieAsync&gt;d__4" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;GetMovieAsync&gt;d__4" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2659,7 +2659,7 @@
             <line number="59" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;GetMoviesAsync&gt;d__3" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;GetMoviesAsync&gt;d__3" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2689,7 +2689,7 @@
             <line number="42" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;PostMovieAsync&gt;d__6" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;PostMovieAsync&gt;d__6" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2735,7 +2735,7 @@
             <line number="104" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;UpdateMovieAsync&gt;d__7" filename="Practicas Calidad\Practica2Calidad\FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="FilmFranchiseAPI.Controllers.MoviesController/&lt;UpdateMovieAsync&gt;d__7" filename="FilmFranchiseAPI\Controllers\MoviesController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
               <lines>
@@ -2799,7 +2799,7 @@
         </class>
       </classes>
     </package>
-    <package name="XUnitTesting" line-rate="0.995" branch-rate="1" complexity="23">
+    <package name="XUnitTesting" line-rate="0.9971" branch-rate="1" complexity="31">
       <classes>
         <class name="AutoGeneratedProgram" filename="Users\frank\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -2813,7 +2813,7 @@
             <line number="4" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.CreateRoleViewModelShould" filename="Practica2Calidad\XUnitTesting\CreateRoleViewModelShould.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="XUnitTesting.CreateRoleViewModelShould" filename="XUnitTesting\CreateRoleViewModelShould.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="NameRoleValidation" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2853,7 +2853,7 @@
             <line number="35" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.RegisterViewModelShould" filename="Practica2Calidad\XUnitTesting\RegisterViewModelShould.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="XUnitTesting.RegisterViewModelShould" filename="XUnitTesting\RegisterViewModelShould.cs" line-rate="1" branch-rate="1" complexity="3">
           <methods>
             <method name="ValidateEmailSet" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2911,237 +2911,470 @@
             <line number="49" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould" filename="Practica2Calidad\XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="8">
           <methods>
             <method name="ErrorCreateFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="57" hits="1" branch="False" />
-                <line number="58" hits="1" branch="False" />
                 <line number="59" hits="1" branch="False" />
                 <line number="60" hits="1" branch="False" />
                 <line number="61" hits="1" branch="False" />
                 <line number="62" hits="1" branch="False" />
                 <line number="63" hits="1" branch="False" />
-                <line number="65" hits="2" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
                 <line number="66" hits="1" branch="False" />
                 <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
                 <line number="69" hits="1" branch="False" />
                 <line number="70" hits="1" branch="False" />
-                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="2" branch="False" />
                 <line number="73" hits="1" branch="False" />
-                <line number="75" hits="2" branch="False" />
+                <line number="74" hits="1" branch="False" />
                 <line number="76" hits="1" branch="False" />
                 <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="80" hits="1" branch="False" />
+                <line number="82" hits="2" branch="False" />
+                <line number="83" hits="1" branch="False" />
+                <line number="84" hits="1" branch="False" />
               </lines>
             </method>
             <method name="ErrorGetFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="114" hits="1" branch="False" />
-                <line number="115" hits="1" branch="False" />
-                <line number="116" hits="2" branch="False" />
-                <line number="117" hits="1" branch="False" />
-                <line number="118" hits="1" branch="False" />
-                <line number="119" hits="1" branch="False" />
-                <line number="121" hits="2" branch="False" />
-                <line number="122" hits="1" branch="False" />
                 <line number="123" hits="1" branch="False" />
+                <line number="124" hits="1" branch="False" />
+                <line number="125" hits="2" branch="False" />
+                <line number="126" hits="1" branch="False" />
+                <line number="127" hits="1" branch="False" />
+                <line number="128" hits="1" branch="False" />
+                <line number="130" hits="2" branch="False" />
+                <line number="131" hits="1" branch="False" />
+                <line number="132" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="OrderByErrorGetFranchisesAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="176" hits="1" branch="False" />
+                <line number="177" hits="1" branch="False" />
+                <line number="178" hits="2" branch="False" />
+                <line number="179" hits="1" branch="False" />
+                <line number="180" hits="1" branch="False" />
+                <line number="181" hits="1" branch="False" />
+                <line number="183" hits="2" branch="False" />
+                <line number="184" hits="1" branch="False" />
+                <line number="185" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="DirectionErrorGetFranchisesAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="189" hits="1" branch="False" />
+                <line number="190" hits="1" branch="False" />
+                <line number="191" hits="2" branch="False" />
+                <line number="192" hits="1" branch="False" />
+                <line number="193" hits="1" branch="False" />
+                <line number="194" hits="1" branch="False" />
+                <line number="196" hits="2" branch="False" />
+                <line number="197" hits="1" branch="False" />
+                <line number="198" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="ErrorUpdateFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="248" hits="1" branch="False" />
+                <line number="249" hits="1" branch="False" />
+                <line number="250" hits="1" branch="False" />
+                <line number="251" hits="1" branch="False" />
+                <line number="252" hits="1" branch="False" />
+                <line number="253" hits="1" branch="False" />
+                <line number="254" hits="1" branch="False" />
+                <line number="255" hits="1" branch="False" />
+                <line number="256" hits="1" branch="False" />
+                <line number="257" hits="1" branch="False" />
+                <line number="258" hits="1" branch="False" />
+                <line number="259" hits="1" branch="False" />
+                <line number="261" hits="1" branch="False" />
+                <line number="262" hits="1" branch="False" />
+                <line number="263" hits="1" branch="False" />
+                <line number="264" hits="1" branch="False" />
+                <line number="265" hits="1" branch="False" />
+                <line number="266" hits="1" branch="False" />
+                <line number="267" hits="1" branch="False" />
+                <line number="268" hits="1" branch="False" />
+                <line number="269" hits="1" branch="False" />
+                <line number="270" hits="1" branch="False" />
+                <line number="271" hits="1" branch="False" />
+                <line number="273" hits="2" branch="False" />
+                <line number="274" hits="1" branch="False" />
+                <line number="275" hits="1" branch="False" />
+                <line number="277" hits="1" branch="False" />
+                <line number="278" hits="1" branch="False" />
+                <line number="279" hits="1" branch="False" />
+                <line number="280" hits="1" branch="False" />
+                <line number="282" hits="1" branch="False" />
+                <line number="284" hits="2" branch="False" />
+                <line number="285" hits="1" branch="False" />
+                <line number="286" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="DeleteFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="290" hits="1" branch="False" />
+                <line number="291" hits="1" branch="False" />
+                <line number="292" hits="1" branch="False" />
+                <line number="293" hits="1" branch="False" />
+                <line number="294" hits="1" branch="False" />
+                <line number="295" hits="1" branch="False" />
+                <line number="296" hits="1" branch="False" />
+                <line number="297" hits="1" branch="False" />
+                <line number="298" hits="1" branch="False" />
+                <line number="299" hits="1" branch="False" />
+                <line number="300" hits="1" branch="False" />
+                <line number="301" hits="1" branch="False" />
+                <line number="303" hits="2" branch="False" />
+                <line number="304" hits="1" branch="False" />
+                <line number="305" hits="1" branch="False" />
+                <line number="307" hits="1" branch="False" />
+                <line number="309" hits="1" branch="False" />
+                <line number="310" hits="1" branch="False" />
+                <line number="311" hits="1" branch="False" />
+                <line number="313" hits="1" branch="False" />
+                <line number="314" hits="1" branch="False" />
+                <line number="315" hits="1" branch="False" />
+                <line number="316" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name="ErrorDeleteFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="320" hits="1" branch="False" />
+                <line number="321" hits="1" branch="False" />
+                <line number="322" hits="1" branch="False" />
+                <line number="323" hits="1" branch="False" />
+                <line number="324" hits="1" branch="False" />
+                <line number="325" hits="1" branch="False" />
+                <line number="326" hits="1" branch="False" />
+                <line number="327" hits="1" branch="False" />
+                <line number="328" hits="1" branch="False" />
+                <line number="329" hits="1" branch="False" />
+                <line number="330" hits="1" branch="False" />
+                <line number="331" hits="1" branch="False" />
+                <line number="333" hits="2" branch="False" />
+                <line number="334" hits="1" branch="False" />
+                <line number="335" hits="1" branch="False" />
+                <line number="337" hits="1" branch="False" />
+                <line number="339" hits="1" branch="False" />
+                <line number="340" hits="1" branch="False" />
+                <line number="341" hits="1" branch="False" />
+                <line number="342" hits="1" branch="False" />
+                <line number="344" hits="2" branch="False" />
+                <line number="345" hits="1" branch="False" />
+                <line number="346" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="11" branch="False" />
+                <line number="20" hits="11" branch="False" />
+                <line number="21" hits="11" branch="False" />
+                <line number="22" hits="11" branch="False" />
+                <line number="23" hits="11" branch="False" />
+                <line number="24" hits="11" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="52" hits="1" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="57" hits="1" branch="False" />
-            <line number="58" hits="1" branch="False" />
             <line number="59" hits="1" branch="False" />
             <line number="60" hits="1" branch="False" />
             <line number="61" hits="1" branch="False" />
             <line number="62" hits="1" branch="False" />
             <line number="63" hits="1" branch="False" />
-            <line number="65" hits="2" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
             <line number="66" hits="1" branch="False" />
             <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
             <line number="69" hits="1" branch="False" />
             <line number="70" hits="1" branch="False" />
-            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="2" branch="False" />
             <line number="73" hits="1" branch="False" />
-            <line number="75" hits="2" branch="False" />
+            <line number="74" hits="1" branch="False" />
             <line number="76" hits="1" branch="False" />
             <line number="77" hits="1" branch="False" />
-            <line number="114" hits="1" branch="False" />
-            <line number="115" hits="1" branch="False" />
-            <line number="116" hits="2" branch="False" />
-            <line number="117" hits="1" branch="False" />
-            <line number="118" hits="1" branch="False" />
-            <line number="119" hits="1" branch="False" />
-            <line number="121" hits="2" branch="False" />
-            <line number="122" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="80" hits="1" branch="False" />
+            <line number="82" hits="2" branch="False" />
+            <line number="83" hits="1" branch="False" />
+            <line number="84" hits="1" branch="False" />
             <line number="123" hits="1" branch="False" />
+            <line number="124" hits="1" branch="False" />
+            <line number="125" hits="2" branch="False" />
+            <line number="126" hits="1" branch="False" />
+            <line number="127" hits="1" branch="False" />
+            <line number="128" hits="1" branch="False" />
+            <line number="130" hits="2" branch="False" />
+            <line number="131" hits="1" branch="False" />
+            <line number="132" hits="1" branch="False" />
+            <line number="176" hits="1" branch="False" />
+            <line number="177" hits="1" branch="False" />
+            <line number="178" hits="2" branch="False" />
+            <line number="179" hits="1" branch="False" />
+            <line number="180" hits="1" branch="False" />
+            <line number="181" hits="1" branch="False" />
+            <line number="183" hits="2" branch="False" />
+            <line number="184" hits="1" branch="False" />
+            <line number="185" hits="1" branch="False" />
+            <line number="189" hits="1" branch="False" />
+            <line number="190" hits="1" branch="False" />
+            <line number="191" hits="2" branch="False" />
+            <line number="192" hits="1" branch="False" />
+            <line number="193" hits="1" branch="False" />
+            <line number="194" hits="1" branch="False" />
+            <line number="196" hits="2" branch="False" />
+            <line number="197" hits="1" branch="False" />
+            <line number="198" hits="1" branch="False" />
+            <line number="248" hits="1" branch="False" />
+            <line number="249" hits="1" branch="False" />
+            <line number="250" hits="1" branch="False" />
+            <line number="251" hits="1" branch="False" />
+            <line number="252" hits="1" branch="False" />
+            <line number="253" hits="1" branch="False" />
+            <line number="254" hits="1" branch="False" />
+            <line number="255" hits="1" branch="False" />
+            <line number="256" hits="1" branch="False" />
+            <line number="257" hits="1" branch="False" />
+            <line number="258" hits="1" branch="False" />
+            <line number="259" hits="1" branch="False" />
+            <line number="261" hits="1" branch="False" />
+            <line number="262" hits="1" branch="False" />
+            <line number="263" hits="1" branch="False" />
+            <line number="264" hits="1" branch="False" />
+            <line number="265" hits="1" branch="False" />
+            <line number="266" hits="1" branch="False" />
+            <line number="267" hits="1" branch="False" />
+            <line number="268" hits="1" branch="False" />
+            <line number="269" hits="1" branch="False" />
+            <line number="270" hits="1" branch="False" />
+            <line number="271" hits="1" branch="False" />
+            <line number="273" hits="2" branch="False" />
+            <line number="274" hits="1" branch="False" />
+            <line number="275" hits="1" branch="False" />
+            <line number="277" hits="1" branch="False" />
+            <line number="278" hits="1" branch="False" />
+            <line number="279" hits="1" branch="False" />
+            <line number="280" hits="1" branch="False" />
+            <line number="282" hits="1" branch="False" />
+            <line number="284" hits="2" branch="False" />
+            <line number="285" hits="1" branch="False" />
+            <line number="286" hits="1" branch="False" />
+            <line number="290" hits="1" branch="False" />
+            <line number="291" hits="1" branch="False" />
+            <line number="292" hits="1" branch="False" />
+            <line number="293" hits="1" branch="False" />
+            <line number="294" hits="1" branch="False" />
+            <line number="295" hits="1" branch="False" />
+            <line number="296" hits="1" branch="False" />
+            <line number="297" hits="1" branch="False" />
+            <line number="298" hits="1" branch="False" />
+            <line number="299" hits="1" branch="False" />
+            <line number="300" hits="1" branch="False" />
+            <line number="301" hits="1" branch="False" />
+            <line number="303" hits="2" branch="False" />
+            <line number="304" hits="1" branch="False" />
+            <line number="305" hits="1" branch="False" />
+            <line number="307" hits="1" branch="False" />
+            <line number="309" hits="1" branch="False" />
+            <line number="310" hits="1" branch="False" />
+            <line number="311" hits="1" branch="False" />
+            <line number="313" hits="1" branch="False" />
+            <line number="314" hits="1" branch="False" />
+            <line number="315" hits="1" branch="False" />
+            <line number="316" hits="1" branch="False" />
+            <line number="320" hits="1" branch="False" />
+            <line number="321" hits="1" branch="False" />
+            <line number="322" hits="1" branch="False" />
+            <line number="323" hits="1" branch="False" />
+            <line number="324" hits="1" branch="False" />
+            <line number="325" hits="1" branch="False" />
+            <line number="326" hits="1" branch="False" />
+            <line number="327" hits="1" branch="False" />
+            <line number="328" hits="1" branch="False" />
+            <line number="329" hits="1" branch="False" />
+            <line number="330" hits="1" branch="False" />
+            <line number="331" hits="1" branch="False" />
+            <line number="333" hits="2" branch="False" />
+            <line number="334" hits="1" branch="False" />
+            <line number="335" hits="1" branch="False" />
+            <line number="337" hits="1" branch="False" />
+            <line number="339" hits="1" branch="False" />
+            <line number="340" hits="1" branch="False" />
+            <line number="341" hits="1" branch="False" />
+            <line number="342" hits="1" branch="False" />
+            <line number="344" hits="2" branch="False" />
+            <line number="345" hits="1" branch="False" />
+            <line number="346" hits="1" branch="False" />
+            <line number="19" hits="11" branch="False" />
+            <line number="20" hits="11" branch="False" />
+            <line number="21" hits="11" branch="False" />
+            <line number="22" hits="11" branch="False" />
+            <line number="23" hits="11" branch="False" />
+            <line number="24" hits="11" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;&gt;c" filename="Practica2Calidad\XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;&gt;c" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
-            <method name="&lt;CreateFranchiseAsync&gt;b__0_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
+            <method name="&lt;CreateFranchiseAsync&gt;b__1_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="34" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="&lt;GetFranchiseAsync&gt;b__2_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
+            <method name="&lt;GetFranchiseAsync&gt;b__3_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="95" hits="2" branch="False" />
+                <line number="102" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="&lt;GetFranchisesAsync&gt;b__4_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
+            <method name="&lt;GetFranchisesAsync&gt;b__5_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="152" hits="2" branch="False" />
+                <line number="161" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;UpdateFranchiseAsync&gt;b__8_0" signature="(AutoMapper.IMapperConfigurationExpression)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="227" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="34" hits="2" branch="False" />
-            <line number="95" hits="2" branch="False" />
-            <line number="152" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+            <line number="102" hits="2" branch="False" />
+            <line number="161" hits="2" branch="False" />
+            <line number="227" hits="2" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;CreateFranchiseAsync&gt;d__0" filename="Practica2Calidad\XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;CreateFranchiseAsync&gt;d__1" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
-                <line number="25" hits="1" branch="False" />
-                <line number="26" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
                 <line number="28" hits="1" branch="False" />
                 <line number="29" hits="1" branch="False" />
                 <line number="30" hits="1" branch="False" />
                 <line number="31" hits="1" branch="False" />
                 <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
                 <line number="35" hits="1" branch="False" />
                 <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
                 <line number="38" hits="1" branch="False" />
                 <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
                 <line number="42" hits="1" branch="False" />
                 <line number="43" hits="1" branch="False" />
                 <line number="45" hits="1" branch="False" />
                 <line number="46" hits="1" branch="False" />
                 <line number="47" hits="1" branch="False" />
-                <line number="48" hits="1" branch="False" />
                 <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="52" hits="1" branch="False" />
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="56" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
-            <line number="25" hits="1" branch="False" />
-            <line number="26" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
             <line number="28" hits="1" branch="False" />
             <line number="29" hits="1" branch="False" />
             <line number="30" hits="1" branch="False" />
             <line number="31" hits="1" branch="False" />
             <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
             <line number="35" hits="1" branch="False" />
             <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
             <line number="38" hits="1" branch="False" />
             <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
             <line number="42" hits="1" branch="False" />
             <line number="43" hits="1" branch="False" />
             <line number="45" hits="1" branch="False" />
             <line number="46" hits="1" branch="False" />
             <line number="47" hits="1" branch="False" />
-            <line number="48" hits="1" branch="False" />
             <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="52" hits="1" branch="False" />
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="56" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;GetFranchiseAsync&gt;d__2" filename="Practica2Calidad\XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;GetFranchiseAsync&gt;d__3" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="82" hits="1" branch="False" />
-                <line number="83" hits="1" branch="False" />
-                <line number="84" hits="1" branch="False" />
-                <line number="85" hits="1" branch="False" />
-                <line number="86" hits="1" branch="False" />
-                <line number="87" hits="1" branch="False" />
-                <line number="88" hits="1" branch="False" />
                 <line number="89" hits="1" branch="False" />
                 <line number="90" hits="1" branch="False" />
                 <line number="91" hits="1" branch="False" />
                 <line number="92" hits="1" branch="False" />
                 <line number="93" hits="1" branch="False" />
+                <line number="94" hits="1" branch="False" />
+                <line number="95" hits="1" branch="False" />
                 <line number="96" hits="1" branch="False" />
                 <line number="97" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
                 <line number="99" hits="1" branch="False" />
                 <line number="100" hits="1" branch="False" />
-                <line number="101" hits="1" branch="False" />
                 <line number="103" hits="1" branch="False" />
                 <line number="104" hits="1" branch="False" />
-                <line number="105" hits="1" branch="False" />
                 <line number="106" hits="1" branch="False" />
                 <line number="107" hits="1" branch="False" />
                 <line number="108" hits="1" branch="False" />
-                <line number="109" hits="1" branch="False" />
                 <line number="110" hits="1" branch="False" />
+                <line number="111" hits="1" branch="False" />
+                <line number="112" hits="1" branch="False" />
+                <line number="113" hits="1" branch="False" />
+                <line number="114" hits="1" branch="False" />
+                <line number="115" hits="1" branch="False" />
+                <line number="116" hits="1" branch="False" />
+                <line number="117" hits="1" branch="False" />
+                <line number="118" hits="1" branch="False" />
+                <line number="119" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="82" hits="1" branch="False" />
-            <line number="83" hits="1" branch="False" />
-            <line number="84" hits="1" branch="False" />
-            <line number="85" hits="1" branch="False" />
-            <line number="86" hits="1" branch="False" />
-            <line number="87" hits="1" branch="False" />
-            <line number="88" hits="1" branch="False" />
             <line number="89" hits="1" branch="False" />
             <line number="90" hits="1" branch="False" />
             <line number="91" hits="1" branch="False" />
             <line number="92" hits="1" branch="False" />
             <line number="93" hits="1" branch="False" />
+            <line number="94" hits="1" branch="False" />
+            <line number="95" hits="1" branch="False" />
             <line number="96" hits="1" branch="False" />
             <line number="97" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
             <line number="99" hits="1" branch="False" />
             <line number="100" hits="1" branch="False" />
-            <line number="101" hits="1" branch="False" />
             <line number="103" hits="1" branch="False" />
             <line number="104" hits="1" branch="False" />
-            <line number="105" hits="1" branch="False" />
             <line number="106" hits="1" branch="False" />
             <line number="107" hits="1" branch="False" />
             <line number="108" hits="1" branch="False" />
-            <line number="109" hits="1" branch="False" />
             <line number="110" hits="1" branch="False" />
+            <line number="111" hits="1" branch="False" />
+            <line number="112" hits="1" branch="False" />
+            <line number="113" hits="1" branch="False" />
+            <line number="114" hits="1" branch="False" />
+            <line number="115" hits="1" branch="False" />
+            <line number="116" hits="1" branch="False" />
+            <line number="117" hits="1" branch="False" />
+            <line number="118" hits="1" branch="False" />
+            <line number="119" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;GetFranchisesAsync&gt;d__4" filename="Practica2Calidad\XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;GetFranchisesAsync&gt;d__5" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="127" hits="1" branch="False" />
-                <line number="128" hits="1" branch="False" />
-                <line number="129" hits="1" branch="False" />
-                <line number="130" hits="1" branch="False" />
-                <line number="131" hits="1" branch="False" />
-                <line number="132" hits="1" branch="False" />
-                <line number="133" hits="1" branch="False" />
-                <line number="134" hits="1" branch="False" />
-                <line number="135" hits="1" branch="False" />
                 <line number="136" hits="1" branch="False" />
                 <line number="137" hits="1" branch="False" />
                 <line number="138" hits="1" branch="False" />
@@ -3157,27 +3390,27 @@
                 <line number="148" hits="1" branch="False" />
                 <line number="149" hits="1" branch="False" />
                 <line number="150" hits="1" branch="False" />
+                <line number="151" hits="1" branch="False" />
+                <line number="152" hits="1" branch="False" />
                 <line number="153" hits="1" branch="False" />
                 <line number="154" hits="1" branch="False" />
                 <line number="155" hits="1" branch="False" />
+                <line number="156" hits="1" branch="False" />
                 <line number="157" hits="1" branch="False" />
                 <line number="158" hits="1" branch="False" />
-                <line number="161" hits="1" branch="False" />
+                <line number="159" hits="1" branch="False" />
                 <line number="162" hits="1" branch="False" />
                 <line number="163" hits="1" branch="False" />
+                <line number="164" hits="1" branch="False" />
+                <line number="166" hits="1" branch="False" />
+                <line number="167" hits="1" branch="False" />
+                <line number="170" hits="1" branch="False" />
+                <line number="171" hits="1" branch="False" />
+                <line number="172" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="127" hits="1" branch="False" />
-            <line number="128" hits="1" branch="False" />
-            <line number="129" hits="1" branch="False" />
-            <line number="130" hits="1" branch="False" />
-            <line number="131" hits="1" branch="False" />
-            <line number="132" hits="1" branch="False" />
-            <line number="133" hits="1" branch="False" />
-            <line number="134" hits="1" branch="False" />
-            <line number="135" hits="1" branch="False" />
             <line number="136" hits="1" branch="False" />
             <line number="137" hits="1" branch="False" />
             <line number="138" hits="1" branch="False" />
@@ -3193,17 +3426,110 @@
             <line number="148" hits="1" branch="False" />
             <line number="149" hits="1" branch="False" />
             <line number="150" hits="1" branch="False" />
+            <line number="151" hits="1" branch="False" />
+            <line number="152" hits="1" branch="False" />
             <line number="153" hits="1" branch="False" />
             <line number="154" hits="1" branch="False" />
             <line number="155" hits="1" branch="False" />
+            <line number="156" hits="1" branch="False" />
             <line number="157" hits="1" branch="False" />
             <line number="158" hits="1" branch="False" />
-            <line number="161" hits="1" branch="False" />
+            <line number="159" hits="1" branch="False" />
             <line number="162" hits="1" branch="False" />
             <line number="163" hits="1" branch="False" />
+            <line number="164" hits="1" branch="False" />
+            <line number="166" hits="1" branch="False" />
+            <line number="167" hits="1" branch="False" />
+            <line number="170" hits="1" branch="False" />
+            <line number="171" hits="1" branch="False" />
+            <line number="172" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ServicesUT.MovieServiceShould" filename="Practica2Calidad\XUnitTesting\ServicesUT\MovieServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="XUnitTesting.ServicesUT.FilmFranchiseServiceShould/&lt;UpdateFranchiseAsync&gt;d__8" filename="XUnitTesting\ServicesUT\FilmFranchiseServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="202" hits="1" branch="False" />
+                <line number="203" hits="1" branch="False" />
+                <line number="204" hits="1" branch="False" />
+                <line number="205" hits="1" branch="False" />
+                <line number="206" hits="1" branch="False" />
+                <line number="207" hits="1" branch="False" />
+                <line number="208" hits="1" branch="False" />
+                <line number="209" hits="1" branch="False" />
+                <line number="210" hits="1" branch="False" />
+                <line number="211" hits="1" branch="False" />
+                <line number="212" hits="1" branch="False" />
+                <line number="213" hits="1" branch="False" />
+                <line number="215" hits="1" branch="False" />
+                <line number="216" hits="1" branch="False" />
+                <line number="217" hits="1" branch="False" />
+                <line number="218" hits="1" branch="False" />
+                <line number="219" hits="1" branch="False" />
+                <line number="220" hits="1" branch="False" />
+                <line number="221" hits="1" branch="False" />
+                <line number="222" hits="1" branch="False" />
+                <line number="223" hits="1" branch="False" />
+                <line number="224" hits="1" branch="False" />
+                <line number="225" hits="1" branch="False" />
+                <line number="228" hits="1" branch="False" />
+                <line number="229" hits="1" branch="False" />
+                <line number="231" hits="1" branch="False" />
+                <line number="232" hits="1" branch="False" />
+                <line number="233" hits="1" branch="False" />
+                <line number="234" hits="1" branch="False" />
+                <line number="236" hits="1" branch="False" />
+                <line number="237" hits="1" branch="False" />
+                <line number="239" hits="1" branch="False" />
+                <line number="240" hits="1" branch="False" />
+                <line number="241" hits="1" branch="False" />
+                <line number="242" hits="1" branch="False" />
+                <line number="243" hits="1" branch="False" />
+                <line number="244" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="202" hits="1" branch="False" />
+            <line number="203" hits="1" branch="False" />
+            <line number="204" hits="1" branch="False" />
+            <line number="205" hits="1" branch="False" />
+            <line number="206" hits="1" branch="False" />
+            <line number="207" hits="1" branch="False" />
+            <line number="208" hits="1" branch="False" />
+            <line number="209" hits="1" branch="False" />
+            <line number="210" hits="1" branch="False" />
+            <line number="211" hits="1" branch="False" />
+            <line number="212" hits="1" branch="False" />
+            <line number="213" hits="1" branch="False" />
+            <line number="215" hits="1" branch="False" />
+            <line number="216" hits="1" branch="False" />
+            <line number="217" hits="1" branch="False" />
+            <line number="218" hits="1" branch="False" />
+            <line number="219" hits="1" branch="False" />
+            <line number="220" hits="1" branch="False" />
+            <line number="221" hits="1" branch="False" />
+            <line number="222" hits="1" branch="False" />
+            <line number="223" hits="1" branch="False" />
+            <line number="224" hits="1" branch="False" />
+            <line number="225" hits="1" branch="False" />
+            <line number="228" hits="1" branch="False" />
+            <line number="229" hits="1" branch="False" />
+            <line number="231" hits="1" branch="False" />
+            <line number="232" hits="1" branch="False" />
+            <line number="233" hits="1" branch="False" />
+            <line number="234" hits="1" branch="False" />
+            <line number="236" hits="1" branch="False" />
+            <line number="237" hits="1" branch="False" />
+            <line number="239" hits="1" branch="False" />
+            <line number="240" hits="1" branch="False" />
+            <line number="241" hits="1" branch="False" />
+            <line number="242" hits="1" branch="False" />
+            <line number="243" hits="1" branch="False" />
+            <line number="244" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="XUnitTesting.ServicesUT.MovieServiceShould" filename="XUnitTesting\ServicesUT\MovieServiceShould.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="TestValidateFranchiseAsync" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -3217,7 +3543,7 @@
             <line number="36" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="XUnitTesting.ModelsUT.MovieModelShould" filename="Practica2Calidad\XUnitTesting\ModelsUT\MovieModelShould.cs" line-rate="1" branch-rate="1" complexity="8">
+        <class name="XUnitTesting.ModelsUT.MovieModelShould" filename="XUnitTesting\ModelsUT\MovieModelShould.cs" line-rate="1" branch-rate="1" complexity="8">
           <methods>
             <method name="ValidateMovieSetId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
