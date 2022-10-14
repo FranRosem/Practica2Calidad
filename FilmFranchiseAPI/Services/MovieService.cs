@@ -21,7 +21,8 @@ namespace FilmFranchiseAPI.Services
         }
 
         //1 Catidad de pruebas necesarias para ValidateFranchiseAsync 2, porque numero de decisiones +1 
-        private async Task ValidateFranchiseAsync(int franchiseId)
+        //Se cambio la propiedad del metodo de privado a public
+        public async Task ValidateFranchiseAsync(int franchiseId)
         {
             var franchise = await _franchiseRepository.GetFranchiseAsync(franchiseId);
             if (franchise == null)
