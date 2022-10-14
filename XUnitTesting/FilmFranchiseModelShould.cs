@@ -33,5 +33,19 @@ namespace XUnitTesting
             //Assert
             Assert.True(idIsCorrect, $"The Franchise value: {ValidFilmFranchiseFranchise} is not the same as {ValidFilmFranchise.Franchise}. It was not set correctly");
         }
+        [Fact]
+        public void ValidateFilmFranchiseSetAndGetFilmProductor()
+        {
+            //Arrange
+            var ValidFilmFranchise = new FilmFranchiseModel();
+            string ValidFilmFranchiseFilmProductor = "A Film Productor name";
+
+            //Act
+            ValidFilmFranchise.FilmProductor = ValidFilmFranchiseFilmProductor;
+            bool idIsCorrect = ValidFilmFranchise.FilmProductor == ValidFilmFranchiseFilmProductor;
+
+            //Assert
+            Assert.True(idIsCorrect, $"The FilmProductor value: {ValidFilmFranchiseFilmProductor} is not the same as {ValidFilmFranchise.FilmProductor}. It was not set correctly");
+        }
     }
 }
