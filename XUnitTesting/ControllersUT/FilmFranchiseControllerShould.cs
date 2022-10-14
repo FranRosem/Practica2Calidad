@@ -539,5 +539,68 @@ namespace XUnitTesting.ControllersUT
             Assert.NotNull(okResult);
             Assert.Equal(200, okResult.StatusCode);
         }
+
+        [Fact]
+        public async Task NotUpdatingFilePutFranchiseAsync()
+        {
+            var positionOfBin = Directory.GetCurrentDirectory().IndexOf("bin");
+            var positionOfFolderProyect = Directory.GetCurrentDirectory().IndexOf("XUnitTesting");
+
+            var baseFileRoute = Directory.GetCurrentDirectory().Substring(0, positionOfBin - 1);
+            var baseProyectRoute = Directory.GetCurrentDirectory().Substring(0, positionOfFolderProyect - 1);
+
+            var pathOfImage = Path.Combine(baseFileRoute, "Images", "test_image.png");
+            var pathOfAPI = Path.Combine(baseProyectRoute, "FilmFranchiseAPI");
+
+            var stream = File.OpenRead(pathOfImage);
+            var file = new FormFile(stream, 0, stream.Length, null, Path.GetFileName(stream.Name))
+            {
+                Headers = new HeaderDictionary(),
+                ContentType = "application/png"
+            };
+            var actualDirectory = Directory.GetCurrentDirectory();
+            Directory.SetCurrentDirectory(pathOfAPI);
+            Directory.SetCurrentDirectory(actualDirectory);
+
+            var fileService = new FileService();
+            var imagePath = fileService.UploadFile(file);
+
+            var filmFranchiseFormModel = new FilmFranchiseFormModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+                Image = file,
+                ImagePath = imagePath
+            };
+            var filmFranchiseFormUpdated = new FilmFranchiseFormModel()
+            {
+                Id = 1,
+                Franchise = "DC",
+                FilmProductor = "Warner Bros",
+                FilmProducer = "Dan Lin",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            franchiseServiceMock.Setup(f => f.CreateFranchiseAsync(filmFranchiseFormModel)).ReturnsAsync(filmFranchiseFormModel);
+            franchiseServiceMock.Setup(f => f.UpdateFranchiseAsync(1, filmFranchiseFormModel)).ReturnsAsync(filmFranchiseFormUpdated);
+
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.PutFranchiseAsync(1, filmFranchiseFormModel);
+            var okResult = result.Result as ObjectResult;
+
+            Assert.NotNull(okResult);
+            Assert.Equal(200, okResult.StatusCode);
+        }
     }
 }
