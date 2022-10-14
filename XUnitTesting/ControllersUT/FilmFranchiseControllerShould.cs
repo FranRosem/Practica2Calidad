@@ -179,8 +179,6 @@ namespace XUnitTesting.ControllersUT
                 Description = "SuperHeros Movies",
                 MovieCount = 22,
             };
-            var FilmFranchisesEnumerable = new List<FilmFranchiseModel>() { filmFranchiseModel } as IEnumerable<FilmFranchiseModel>;
-
 
             var franchiseServiceMock = new Mock<IFilmFranchiseService>();
             franchiseServiceMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseModel);
@@ -193,6 +191,35 @@ namespace XUnitTesting.ControllersUT
 
             Assert.NotNull(okResult);
             Assert.Equal(200, okResult.StatusCode);
+        }
+
+        [Fact]
+        public async Task NotFoundGetFranchiseAsync()
+        {
+            var filmFranchiseModel = new FilmFranchiseModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            var notFoundElement = new NotFoundElementException($"Film Franchise with id:{filmFranchiseModel.Id} does not exists.");
+            franchiseServiceMock.Setup(f => f.GetFranchiseAsync(1, false)).ThrowsAsync(notFoundElement);
+            var fileService = new FileService();
+
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.GetFranchiseAsync(1, "false");
+            var badResult = result.Result as NotFoundObjectResult;
+
+            Assert.NotNull(badResult);
+            Assert.Equal(404, badResult.StatusCode);
         }
     }
 }
