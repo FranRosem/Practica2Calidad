@@ -274,9 +274,9 @@ namespace XUnitTesting.ControllersUT
             };
             var actualDirectory = Directory.GetCurrentDirectory();
             Directory.SetCurrentDirectory(pathOfAPI);
-            Directory.SetCurrentDirectory(actualDirectory);
             var fileService = new FileService();
             var imagePath = fileService.UploadFile(file);
+            //Directory.SetCurrentDirectory(actualDirectory);
 
 
             var filmFranchiseFormModel = new FilmFranchiseFormModel()
@@ -335,7 +335,7 @@ namespace XUnitTesting.ControllersUT
         }
 
         [Fact]
-        public async Task ErrorCreateFranchiseForm2()
+        public async Task ErrorCreateFranchiseForm()
         {
             var positionOfBin = Directory.GetCurrentDirectory().IndexOf("bin");
             var positionOfFolderProyect = Directory.GetCurrentDirectory().IndexOf("XUnitTesting");
