@@ -5,7 +5,10 @@ using FilmFranchiseAPI.Models.Security;
 using FilmFranchiseAPI.Services.Security;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
+<<<<<<< HEAD
 using Newtonsoft.Json.Linq;
+=======
+>>>>>>> f67decf (Register User in ControllersUT)
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -46,6 +49,7 @@ namespace XUnitTesting.ControllersUT
             Assert.True(responseValues.IsSuccess);
             Assert.Equal(200, okResult.StatusCode);
         }
+<<<<<<< HEAD
 
         [Fact]
         public async Task BadRequestRegisterUserAsync()
@@ -382,5 +386,7 @@ namespace XUnitTesting.ControllersUT
             Assert.Equal("Some properties are not valid", badResult.Value);
             Assert.Equal(400, badResult.StatusCode);
         }
+=======
+>>>>>>> f67decf (Register User in ControllersUT)
     }
 }
