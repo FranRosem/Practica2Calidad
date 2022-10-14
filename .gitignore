@@ -16,6 +16,8 @@ project.lock.json
 *.user
 *.userosscache
 *.sln.docstates
+*.sln.DotSettings
+*.sln.DotSettings.user
 
 # Build results
 [Dd]ebug/
@@ -40,6 +42,8 @@ XUnitTesting/obj/Debug/netcoreapp3.1/XUnitTesting.csproj.AssemblyReference.cache
 FilmFranchiseAPI/.vs/FilmFranchiseAPI/v16/.suo
 XUnitTesting/obj/Debug/netcoreapp3.1/XUnitTesting.csproj.AssemblyReference.cache
 Debug/
+Images/
+*Images/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
