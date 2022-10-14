@@ -181,12 +181,12 @@ namespace XUnitTesting.ControllersUT
             };
 
             var franchiseServiceMock = new Mock<IFilmFranchiseService>();
-            franchiseServiceMock.Setup(f => f.GetFranchiseAsync(1, false)).ReturnsAsync(filmFranchiseModel);
+            franchiseServiceMock.Setup(f => f.GetFranchiseAsync(1, true)).ReturnsAsync(filmFranchiseModel);
             var fileService = new FileService();
 
             var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
 
-            var result = await franchiseController.GetFranchiseAsync(1, "false");
+            var result = await franchiseController.GetFranchiseAsync(1, "");
             var okResult = result.Result as OkObjectResult;
 
             Assert.NotNull(okResult);
@@ -220,6 +220,35 @@ namespace XUnitTesting.ControllersUT
 
             Assert.NotNull(badResult);
             Assert.Equal(404, badResult.StatusCode);
+        }
+
+        [Fact]
+        public async Task ErrorGetFranchiseAsync()
+        {
+            var oneFilmFranchiseModel = new FilmFranchiseModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var exception = new Exception("Something happend.");
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            franchiseServiceMock.Setup(f => f.GetFranchiseAsync(1, false)).Throws(exception);
+            var fileService = new FileService();
+
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.GetFranchiseAsync(1, "false");
+            var badResult = result.Result as ObjectResult;
+
+            Assert.NotNull(badResult);
+            Assert.Equal(500, badResult.StatusCode);
         }
     }
 }
