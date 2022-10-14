@@ -30,9 +30,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = true
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.RegisterUserAsync(registerModel)).ReturnsAsync(userResponse);
 
@@ -60,9 +57,6 @@ namespace XUnitTesting.ControllersUT
                 Token = "Confirm password doesn't match the password",
                 IsSuccess = false
             };
-
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
 
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.RegisterUserAsync(registerModel)).ReturnsAsync(userResponse);
@@ -92,9 +86,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = false
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.RegisterUserAsync(registerModel));
 
@@ -123,9 +114,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = true
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateRoleAsync(roleModel)).ReturnsAsync(userResponse);
 
@@ -153,9 +141,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = false
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateRoleAsync(roleModel)).ReturnsAsync(userResponse);
 
@@ -182,9 +167,6 @@ namespace XUnitTesting.ControllersUT
                 Token = "Role did not create",
                 IsSuccess = false
             };
-
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
 
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateRoleAsync(roleModel));
@@ -214,9 +196,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = true
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateUserRoleAsync(userRoleModel)).ReturnsAsync(userResponse);
 
@@ -244,9 +223,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = false
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateUserRoleAsync(userRoleModel)).ReturnsAsync(userResponse);
 
@@ -273,9 +249,6 @@ namespace XUnitTesting.ControllersUT
                 Token = "user does not exist",
                 IsSuccess = false
             };
-
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
 
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.CreateUserRoleAsync(userRoleModel));
@@ -305,9 +278,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = true,
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.LoginUserAsync(loginModel)).ReturnsAsync(userResponse);
 
@@ -335,9 +305,6 @@ namespace XUnitTesting.ControllersUT
                 IsSuccess = false
             };
 
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
-
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.LoginUserAsync(loginModel)).ReturnsAsync(userResponse);
 
@@ -364,9 +331,6 @@ namespace XUnitTesting.ControllersUT
                 Token = "There is no user with that Email address",
                 IsSuccess = false
             };
-
-            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
-            var mapper = config.CreateMapper();
 
             var userServiceMock = new Mock<IUserService>();
             userServiceMock.Setup(u => u.LoginUserAsync(loginModel));
