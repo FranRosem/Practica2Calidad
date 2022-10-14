@@ -1,6 +1,5 @@
 ﻿using FilmFranchiseAPI.Services;
 using Microsoft.AspNetCore.Http;
-using System;
 using System.IO;
 using Xunit;
 
@@ -27,9 +26,11 @@ namespace XUnitTesting.ServicesUT
                 ContentType = "application/png"
             };
             var fileService = new FileService();
+            var actualDirectory = Directory.GetCurrentDirectory();
             Directory.SetCurrentDirectory(pathOfAPI);
             var exception = Record.Exception(() => fileService.UploadFile(file));
 
+            Directory.SetCurrentDirectory(actualDirectory);
             Assert.Null(exception);
         }
         [Fact]
