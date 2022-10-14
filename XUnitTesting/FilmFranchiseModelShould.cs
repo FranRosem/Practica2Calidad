@@ -117,5 +117,19 @@ namespace XUnitTesting
             //Assert
             Assert.True(idIsCorrect, $"The MovieCount value: {ValidFilmFranchiseMovieCount} is not the same as {ValidFilmFranchise.MovieCount}. It was not set correctly");
         }
+        [Fact]
+        public void ValidateFilmFranchiseSetAndGetImagePath()
+        {
+            //Arrange
+            var ValidFilmFranchise = new FilmFranchiseModel();
+            string ValidFilmFranchiseImagePath = "C:/Test/image/route/here";
+
+            //Act
+            ValidFilmFranchise.ImagePath = ValidFilmFranchiseImagePath;
+            bool idIsCorrect = ValidFilmFranchise.ImagePath == ValidFilmFranchiseImagePath;
+
+            //Assert
+            Assert.True(idIsCorrect, $"The ImagePath value: {ValidFilmFranchiseImagePath} is not the same as {ValidFilmFranchise.ImagePath}. It was not set correctly");
+        }
     }
 }
