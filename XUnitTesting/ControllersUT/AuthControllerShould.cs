@@ -5,6 +5,7 @@ using FilmFranchiseAPI.Models.Security;
 using FilmFranchiseAPI.Services.Security;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -289,6 +290,36 @@ namespace XUnitTesting.ControllersUT
             Assert.NotNull(badResult);
             Assert.Equal("Some properties are not valid", badResult.Value);
             Assert.Equal(400, badResult.StatusCode);
+        }
+
+        [Fact]
+        public async Task LoginAsync()
+        {
+            var loginModel = new LoginViewModel()
+            {
+                Email = "yonpol@hotmail.com",
+                Password = "yonpol123"
+            };
+            var userResponse = new UserManagerResponse
+            {
+                Token = "token",
+                IsSuccess = true,
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+
+            var userServiceMock = new Mock<IUserService>();
+            userServiceMock.Setup(u => u.LoginUserAsync(loginModel)).ReturnsAsync(userResponse);
+
+            var authController = new AuthController(userServiceMock.Object);
+            var result = await authController.LoginAsync(loginModel);
+            var okResult = result as OkObjectResult;
+            var responseValues = okResult.Value as UserManagerResponse;
+
+            Assert.NotNull(okResult);
+            Assert.Equal(200, okResult.StatusCode);
+            Assert.True(responseValues.IsSuccess);
         }
     }
 }
