@@ -445,5 +445,33 @@ namespace XUnitTesting.ControllersUT
             Assert.NotNull(badResult);
             Assert.Equal(404, badResult.StatusCode);
         }
+
+        [Fact]
+        public async Task ErrorPostFranchiseAsync()
+        {
+            var filmFranchiseModel = new FilmFranchiseModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            var exception = new Exception("Something happend.");
+            franchiseServiceMock.Setup(f => f.CreateFranchiseAsync(filmFranchiseModel)).Throws(exception);
+            var fileService = new FileService();
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.PostFranchiseAsync(filmFranchiseModel);
+            var okResult = result.Result as ObjectResult;
+
+            Assert.NotNull(okResult);
+            Assert.Equal(500, okResult.StatusCode);
+        }
     }
 }
