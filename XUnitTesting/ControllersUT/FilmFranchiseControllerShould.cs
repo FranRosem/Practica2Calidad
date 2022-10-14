@@ -19,6 +19,13 @@ namespace XUnitTesting.ControllersUT
 {
     public class FilmFranchiseControllerShould
     {
+        private HashSet<string> _allowedSortValues = new HashSet<string>
+        {
+            "id",
+            "name",
+            "year"
+        };
+
         [Fact]
         public async Task GetFranchisesAsync()
         {
@@ -93,6 +100,38 @@ namespace XUnitTesting.ControllersUT
 
             Assert.NotNull(badResult);
             Assert.Equal(404, badResult.StatusCode);
+        }
+
+        [Fact]
+        public async Task BadRequestGetFranchisesAsync()
+        {
+            var oneFilmFranchiseModel = new FilmFranchiseModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var FilmFranchisesEnumerable = new List<FilmFranchiseModel>() { oneFilmFranchiseModel } as IEnumerable<FilmFranchiseModel>;
+
+            string orderBy = "center";
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            var invalidElement = new InvalidElementOperationException($"Invalid orderBy value: {orderBy}. The allowed values for querys are: {string.Join(',', _allowedSortValues)}");
+            franchiseServiceMock.Setup(f => f.GetFranchisesAsync("asc", orderBy)).ThrowsAsync(invalidElement);
+            var fileService = new FileService();
+
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.GetFranchisesAsync("asc", orderBy);
+            var badResult = result.Result as BadRequestObjectResult;
+
+            Assert.NotNull(badResult);
+            Assert.Equal(400, badResult.StatusCode);
         }
     }
 }
