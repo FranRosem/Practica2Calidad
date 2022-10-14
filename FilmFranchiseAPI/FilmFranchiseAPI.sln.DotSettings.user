@@ -1,5 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:Boolean x:Key="/Default/Environment/Filtering/ExcludeCoverageFilters/=FilmFranchiseAPI_003B_002A_003BFilmFranchiseAPI_002EModels_002EFilmFranchiseFormModel_003B_002A/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\miky1\AppData\Local\Temp\JetBrains\ReSharperPlatformVs17\vAny_7429009d\CoverageData\_FilmFranchiseAPI.-613357760\Snapshot\snapshot.utdcvr</s:String>
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=033e1f81_002D4953_002D493c_002Dbf35_002D7a93995004c3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
@@ -15,7 +16,7 @@
   &lt;Project Location="D:\Practica2Calidad\XUnitTesting" Presentation="&amp;lt;XUnitTesting&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b2f48227_002D2778_002D40d6_002Dae42_002D245901f4042a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;XUnitTesting&amp;gt; #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Project Location="D:\Practicas Calidad\Practica2Calidad\XUnitTesting" Presentation="&amp;lt;XUnitTesting&amp;gt;" /&gt;&#xD;
+  &lt;Project Location="C:\uNIVERSIDAD\Gestion de calidad\Practica2Calidad\XUnitTesting" Presentation="&amp;lt;XUnitTesting&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cb415159_002D5d3a_002D40f1_002Db9ef_002D7b319af3daca/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="3" Name="MovieModelShould" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
