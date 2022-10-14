@@ -25,4 +25,8 @@
     <ProjectReference Include="..\FilmFranchiseAPI\FilmFranchiseAPI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RopositoryUT\" />
+  </ItemGroup>
+
 </Project>
