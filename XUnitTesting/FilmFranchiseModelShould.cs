@@ -1,4 +1,6 @@
 ﻿using FilmFranchiseAPI.Models;
+using System;
+using System.Collections.Generic;
 using Xunit;
 
 namespace XUnitTesting
@@ -130,6 +132,36 @@ namespace XUnitTesting
 
             //Assert
             Assert.True(idIsCorrect, $"The ImagePath value: {ValidFilmFranchiseImagePath} is not the same as {ValidFilmFranchise.ImagePath}. It was not set correctly");
+        }
+        [Fact]
+        public void ValidateFilmFranchiseSetAndGetMovies()
+        {
+            //Arrange
+            var ValidFilmFranchise = new FilmFranchiseModel();
+
+            var movie = new MovieModel
+            {
+                Id = 1,
+                Title = "Titanic",
+                Duration = new DateTime(2016, 12, 31, 5, 10, 20),
+                Gross = 314.15f
+            };
+            var movie2 = new MovieModel
+            {
+                Id = 1,
+                Title = "Titanic",
+                Duration = new DateTime(2016, 12, 31, 5, 10, 20),
+                Gross = 314.15f
+            };
+
+            var FilmFranchisesEnumerable = new List<MovieModel>() { movie, movie2 } as IEnumerable<MovieModel>;
+
+            //Act
+            ValidFilmFranchise.Movies = FilmFranchisesEnumerable;
+            bool idIsCorrect = ValidFilmFranchise.Movies == FilmFranchisesEnumerable;
+
+            //Assert
+            Assert.True(idIsCorrect, $"The id: {FilmFranchisesEnumerable} is not the same as {ValidFilmFranchise.Movies}. It was not set correctly");
         }
     }
 }
