@@ -62,5 +62,37 @@ namespace XUnitTesting.ControllersUT
             Assert.NotEmpty(franchisesList);
             Assert.Contains(franchisesList, franchise => franchise.Id == oneFilmFranchiseModel.Id);
         }
+
+        [Fact]
+        public async Task NotFoundGetFranchisesAsync()
+        {
+            var oneFilmFranchiseModel = new FilmFranchiseModel()
+            {
+                Id = 1,
+                Franchise = "Marvel",
+                FilmProductor = "Disney",
+                FilmProducer = "Kevin Feige",
+                FirstMovieYear = 2010,
+                LastMovieYear = 2022,
+                Description = "SuperHeros Movies",
+                MovieCount = 22,
+            };
+
+            var FilmFranchisesEnumerable = new List<FilmFranchiseModel>() { } as IEnumerable<FilmFranchiseModel>;
+
+
+            var franchiseServiceMock = new Mock<IFilmFranchiseService>();
+            var notFoundElement = new NotFoundElementException($"Film Franchise with id:{oneFilmFranchiseModel.Id} does not exists.");
+            franchiseServiceMock.Setup(f => f.GetFranchisesAsync("asc", "id")).ThrowsAsync(notFoundElement);
+            var fileService = new FileService();
+
+            var franchiseController = new FilmFranchisesController(franchiseServiceMock.Object, fileService);
+
+            var result = await franchiseController.GetFranchisesAsync("asc", "id");
+            var badResult = result.Result as NotFoundObjectResult;
+
+            Assert.NotNull(badResult);
+            Assert.Equal(404, badResult.StatusCode);
+        }
     }
 }
