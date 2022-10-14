@@ -103,5 +103,19 @@ namespace XUnitTesting
             //Assert
             Assert.True(idIsCorrect, $"The Description value: {ValidFilmFranchiseDescription} is not the same as {ValidFilmFranchise.Description}. It was not set correctly");
         }
+        [Fact]
+        public void ValidateFilmFranchiseSetAndGetMovieCount()
+        {
+            //Arrange
+            var ValidFilmFranchise = new FilmFranchiseModel();
+            int ValidFilmFranchiseMovieCount = 8;
+
+            //Act
+            ValidFilmFranchise.MovieCount = ValidFilmFranchiseMovieCount;
+            bool idIsCorrect = ValidFilmFranchise.MovieCount == ValidFilmFranchiseMovieCount;
+
+            //Assert
+            Assert.True(idIsCorrect, $"The MovieCount value: {ValidFilmFranchiseMovieCount} is not the same as {ValidFilmFranchise.MovieCount}. It was not set correctly");
+        }
     }
 }
