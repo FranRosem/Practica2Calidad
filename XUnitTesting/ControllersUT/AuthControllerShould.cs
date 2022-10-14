@@ -259,5 +259,36 @@ namespace XUnitTesting.ControllersUT
             Assert.False(responseValues.IsSuccess);
             Assert.Equal(400, badResult.StatusCode);
         }
+
+        [Fact]
+        public async Task InvalidModelCreateUserRolenAsync()
+        {
+            var userRoleModel = new CreateUserRoleViewModel()
+            {
+                UserId = "1",
+                RoleId = "1"
+            };
+            var userResponse = new UserManagerResponse
+            {
+                Token = "user does not exist",
+                IsSuccess = false
+            };
+
+            var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
+            var mapper = config.CreateMapper();
+
+            var userServiceMock = new Mock<IUserService>();
+            userServiceMock.Setup(u => u.CreateUserRoleAsync(userRoleModel));
+
+            var authController = new AuthController(userServiceMock.Object);
+            authController.ModelState.AddModelError("", "");
+
+            var result = await authController.CreateUserRolenAsync(userRoleModel);
+            var badResult = result as BadRequestObjectResult;
+
+            Assert.NotNull(badResult);
+            Assert.Equal("Some properties are not valid", badResult.Value);
+            Assert.Equal(400, badResult.StatusCode);
+        }
     }
 }
