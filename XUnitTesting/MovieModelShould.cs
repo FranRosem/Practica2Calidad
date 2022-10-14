@@ -44,7 +44,7 @@ namespace XUnitTesting
         {
             //Arrange
             MovieModel movie = new MovieModel();
-            DateTime dataTime = new DateTime(2042, 12, 24, 18, 42, 0);
+            DateTime dataTime = new DateTime(2042, 12, 24, 1, 42, 0);
             DateTime duration = dataTime.Date;
             movie.Duration = duration;
             //Act
