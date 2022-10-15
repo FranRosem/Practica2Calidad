@@ -48,17 +48,6 @@ namespace XUnitTesting.ServicesUT
         [Fact]
         public  async void ValidateCreateMovieAsync()
         {
-            DateTime dataTime = new DateTime(2042, 12, 24, 1, 42, 0);
-            DateTime duration = dataTime.Date;
-            //Arrange
-            MovieEntity movieEnt = new MovieEntity
-            {
-                Id= 1,
-                Title = "Avengers",
-                Description = "The avengers asemble",
-                Gross = 150.9f,
-                Duration = duration
-            };
             var filmFranchiseEntity = new FilmFranchiseEntity()
             {
                 Id = 1,
@@ -69,36 +58,43 @@ namespace XUnitTesting.ServicesUT
                 LastMovieYear = 2022,
                 Description = "SuperHeros Movies",
                 MovieCount = 22,
-                ImagePath ="C://",
-                Movies=new List<MovieEntity> { movieEnt}
             };
-
             var config = new MapperConfiguration(cfg => cfg.AddProfile<AutoMapperProfile>());
             var mapper = config.CreateMapper();
 
-            var filmMock = new Mock<IFilmFranchiseRepository>();
 
-            var dbContext = new Mock<FilmFranchiseDbContext>();
-            
-            //dbContext.Setup(f => f.FilmFranchises=filmFranchiseEntity);
-
-            filmMock.Setup(f => f.CreateFranchise(filmFranchiseEntity));
-            IFilmFranchiseRepository respons = filmMock.Object;
-            respons.SaveChangesAsync();
-            MovieService _movieService = new MovieService(respons, mapper);
-            MovieModel movie = new MovieModel
+            var filmFranchiseRepositoryMock = new Mock<IFilmFranchiseRepository>();
+            filmFranchiseRepositoryMock.Setup(f => f.CreateFranchise(filmFranchiseEntity));
+            filmFranchiseRepositoryMock.Setup(f => f.GetFranchiseAsync(1, false));
+            var responsMock = filmFranchiseRepositoryMock.Object;
+            filmFranchiseRepositoryMock.Setup(f => f.SaveChangesAsync()).ReturnsAsync(true);
+            responsMock.CreateFranchise(filmFranchiseEntity);
+            if(await responsMock.SaveChangesAsync())
             {
-                Title = "Avengers",
-                Description =  "The avengers asemble",
-                Gross=  150.9f,
-                Duration= duration
-            };
-            //Act
-            var result = await _movieService.CreateMovieAsync(1, movie);
-            //Assert
-            Assert.Equal(result.FilmFranchiseId, filmFranchiseEntity.Id);
+                var respons = responsMock.GetFranchiseAsync(1, false);
 
-            //Assert.ThrowsAsync<NotFoundElementException>(async () => await _movieService.CreateMovieAsync(0, movie));
+
+
+                MovieService _movieService = new MovieService(responsMock, mapper);
+
+                DateTime dataTime = new DateTime(2042, 12, 24, 1, 42, 0);
+                DateTime duration = dataTime.Date;
+
+                MovieModel movie = new MovieModel
+                {
+                    Title = "Avengers",
+                    Description = "The avengers asemble",
+                    Gross = 150.9f,
+                    Duration = duration,
+                    Id = 1
+                };
+                //Act
+                await _movieService.CreateMovieAsync(1, movie);
+                var responsGet = await _movieService.GetMovieAsync(1, 1);
+                //Assert
+                Assert.Equal(movie.Id, responsGet.Id);
+            }
+            
         }
     }
 }
